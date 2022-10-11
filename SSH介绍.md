@@ -20,7 +20,7 @@ ssh-keygen -t rsa -C "azureuser@myserver" -f "filename"
 
 ## 配置密钥到GitHub
 
-为了使得本地的Git能够成功与GitHub中的远程仓库绑定，需要配置上一步生成的公钥。
+为了使得本地的`Git`能够成功与`GitHub`中的远程仓库绑定，需要配置上一步生成的公钥。
 
 进入到`GitHub`的`setting`中，选择`SSH and GPG keys`，点击`New SSH key`，将公钥中的内容复制并保存即可。需要注意的是，公钥可以使用记事本打开，保存时可能需要收取`GitHub`验证码。
 

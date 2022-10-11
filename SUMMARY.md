@@ -6,6 +6,7 @@
     * [python的IDE配置](Python的IDE配置.md)
 * [网络爬虫](爬虫相关.md)
   * [BeatifulSoup](BeatifulSoup使用.md)
+  * [Selenium](Selenium爬虫相关.md)
 * [Git](Git相关.md)
 * [GitBook](GitBook相关.md)
 * [Uqer](Uqer.md)
