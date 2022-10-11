@@ -1,5 +1,3 @@
-# Git相关
-
 记录使用Git过程中的总结，主要包括Git命令，GIt与各种IDE的配置，Git与GitHub远程仓库连接
 
 ## Git配置
