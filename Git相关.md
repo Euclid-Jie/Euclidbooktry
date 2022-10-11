@@ -56,6 +56,14 @@ Git官网下载并安装，配置邮箱
   git commit --amend -m "commit by bash" # 修正提交
   ```
 
+- 绑定远程仓库，需要先配置SSH并在远程创建好仓库
+
+  ```bash
+  git remote add origin git@github.com:[yourGitHubName]/[yourRepositories].git
+  ```
+
+  或者请在GitHub创建完仓库后，自己观察页面，上述代码可以直接复制到
+
 - 推送
 
   ```bash
