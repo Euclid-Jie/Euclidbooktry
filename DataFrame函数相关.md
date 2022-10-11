@@ -42,7 +42,7 @@ Pandas.DataFrame.apply(func,axis)
 demo_df['updateTime'] = demo_df['updateTime'].apply(lambda x:x.split(' ')[0])
 ```
 
-## 使用group.by进行分组操作
+## 使用groupby进行分组操作
 
 ```python
 Pandas.DataFrame.groupby(by,axis)
@@ -87,12 +87,17 @@ Pandas.DataFrame.merge(right,how,on,axis)
 这个方法类似于`Excel`中的`Vlookup`了，根据关键词将两个df匹配拼接起来
 
 - `right`表示需要拼接的`df`，其实写成`pd.merge(left_df,right_df)`亲测也可以
-
 - `how`表示拼接方法，可选`‘left’, ‘right’, ‘outer’, ‘inner’, ‘cross’`, 默认 `inner`，表示仅保留两个`df`共有的部分，`left`表示仅保留左边`left`的部分
-
 - `on`表示关键词列，如果左右名称不一样，可以分别使用`left_on`，`right_on`
-
 - `axis`一般就是`1`了
+
+特别的，使用merge按照Index拼接
+
+```python
+data_df.merge(REVS5,left_index=True,right_index=True)
+```
+
+
 
 ## 使用concat拼接数据
 
@@ -120,8 +125,8 @@ SecData_df['vwap'].replace(0, np.nan, inplace=True)
 
 ## 使用GroupBy.rank进行排序
 
-```
-Pandas.DataFrame.GrouoBy().rank()
+```python
+Pandas.DataFrame.groupby().rank()
 ```
 
 这个操作是对某列的数据进行聚类然后对其它列的属于同类数据进行数值大小排序
@@ -193,13 +198,22 @@ tag_a = self.CAdf['TradTime'].str.contains('14:5[789]:[0-9]{2}.[0-9]{3}|15:00:[0
 self.SecDatadf.drop(tag_a.index[tag_a], inplace=True)  # 删除提取出的数据
 ```
 
+删除特定列
+
+```python
+data_df.drop(columns=['aiq_date','closePrice','turnoverVol'])
+```
+
 ## 序列差分
 
 ```python
-Pandas.DataFrame.diff()
+Pandas.DataFrame.diff(axis=1,periods=1)
 ```
 
 做差分，第一个会变成`NaN`
+
+- 参数`axis`表示对几列进行差分
+- 参数`periods`表示差分跨度，默认为`1`
 
 ```python
 self.wheredf['diff'] = self.wheredf[['Vgroup']].diff()
