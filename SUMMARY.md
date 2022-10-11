@@ -8,5 +8,4 @@
 * [爬虫相关](爬虫相关.md)
   * [BeatifulSoup使用](BeatifulSoup使用.md)
 * [Git相关](Git相关.md)
-    * [GIt相关1](Git相关1.md)
     * [格式检查](格式检查.md)
