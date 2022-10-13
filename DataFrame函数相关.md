@@ -265,49 +265,6 @@ self.SecID = self.SecDatadf['SecurityID'][0]
 self.wheredf.loc[indexi]['Vgroup']
 ```
 
-# Pandas时间
-
-这个版块很重要，但是每次都记不住，后面的参数表示时间的格式，先举例
-
-```python
->>> a = datetime.date(2017,3,22)
->>> a.__format__('%Y-%m-%d')
-'2017-03-22'
->>> a.__format__('%Y/%m/%d')
-'2017/03/22'
->>> a.__format__('%y/%m/%d')
-'17/03/22'
->>> a.__format__('%D')
-'03/22/17'
-```
-
-## str转时间
-
-```python
-datetime.strptime(str,'%H:%M:%S.%f')
-```
-
-## 时间转str
-
-```python
-datetime.strftime(str,'%H:%M:%S.%f')
-```
-
-## 时间间隔
-
-```python
-(datetime.strptime(str1,'%H:%M:%S.%f') - datetime.strptime(str2, '%H:%M:%S.%f')).seconds
-```
-
-`.seconds`表示将此间隔转为秒为单位
-
-## 时间比较
-
-右边的datetime为直接构造了一个时间日期
-
-```
-datetime.strptime(str, '%H:%M:%S.%f') > datetime(1900, 1, 1, 13, 0, 0)
-```
 
 ## pandas分箱
 
