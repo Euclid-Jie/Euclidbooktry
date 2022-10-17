@@ -4,3 +4,7 @@
 
 - Python类库安装
 - Pd.DataFrame数据处理相关
+- 时间格式数据处理
+- Numpy相关
+- Python的IDE配置
+- 正则表达式
