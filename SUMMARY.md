@@ -13,3 +13,4 @@
 * [GitBook](GitBook相关.md)
 * [Uqer](Uqer.md)
 * [SSH](SSH介绍.md)
+* [stata](stata相关操作.md)
