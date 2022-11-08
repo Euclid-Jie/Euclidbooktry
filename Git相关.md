@@ -95,7 +95,13 @@ git config --global core.quotepath false
 git config --global --add safe.directory F:/GitHub/my-project
 ```
 
+## Git无法Push，显示超时
 
+```shell
+Failed to connect to github.com port 443:connection timed out
+```
+
+需要删除`git`的全局代理后重新`Push`
 
 # 使用Pycharm
 
