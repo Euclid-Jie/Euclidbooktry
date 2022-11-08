@@ -12,12 +12,20 @@ option = ChromeOptions() # 初始化类
 option.add_experimental_option("excludeSwitches", ['enable-automation', 'enable-logging']) # 添加参数
 driver = Chrome(options=option)  # 模拟开浏览器
 driver.get('https://m.xiaozhu.com/#') # 跳转网址
+myDriver.maximize_window()  # 最大化窗口
 ```
 
 ## 2、获取对应元素
 
 ```python
 driver.find_elements_by_class_name('list_con') # 通过class的方式获取，也可以使用其他方式
+```
+
+`selenium`更新后，之前的获取元素的方式发生了改变，主要差异为引入了`By`
+
+```python
+from selenium.webdriver.common.by import By
+driver.find_elements(By.CLASS_NAME, 'list_con'))
 ```
 
 ## 3、处理元素数据
@@ -28,5 +36,13 @@ driver.find_elements_by_class_name('list_con') # 通过class的方式获取，�
 idList = driver.find_elements_by_class_name('list_con')
 soup = BeautifulSoup(idList[0].get_attribute('outerHTML')) # 转换为soup对象
 divs = soup.find_all('div', "list clearfix carnival_item") # 找到对象中数据列表
+element.click() # 点击元素
+```
+
+## 4、设置等待
+
+```python
+from selenium.webdriver.support.wait import WebDriverWait
+WebDriverWait(myDriver, 10).until(lambda driver: driver.find_element(By.CLASS_NAME, 'bicon.bar-icon-fp'))
 ```
 
