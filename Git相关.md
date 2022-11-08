@@ -89,6 +89,14 @@ git config --global core.quotepath false
 
 `step2`在`git bash`的界面中右击空白处，弹出菜单，选择`选项->文本->本地Locale`，设置为`zh_CN`，而旁边的字符集选框选为`UTF-8`。
 
+## Git使用新设备打开时，无法显示提交记录
+
+```shell
+git config --global --add safe.directory F:/GitHub/my-project
+```
+
+
+
 # 使用Pycharm
 
 ## 创建Git仓库
