@@ -109,6 +109,13 @@ Failed to connect to github.com port 443:connection timed out
 
 需要删除`git`的全局代理后重新`Push`
 
+```shell
+git config --global --unset http.proxy
+git config --global --unset https.proxy
+```
+
+
+
 # 使用Pycharm
 
 ## 创建Git仓库
