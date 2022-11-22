@@ -34,9 +34,9 @@
   abline(mo, col="red", lwd=2)                        # 添加经验回归直线
   ```
 
-# 函数用法
+# 回归分析
 
-## 回归相关
+## 建立模型
 
 - 最小二乘回归
 
@@ -51,6 +51,17 @@
   hii <- hatvalues(mo)                                # 杠杆值
   ```
 
+- 计算模型残差
+
+  ```R
+  SSE <- sum(mo$residuals^2)                          # 残差平方和
+  sqrt(SSE/(length(data$x)-2))
+  ```
+
+  测试
+
+## 模型分析
+
 - 点预测
 
   ```R
@@ -61,8 +72,8 @@
 - 区间预测
 
   ```R
-  confidence_interval <- predict.lm(mo, data, interval="confidence")  # 计算区间预测值
-  prediction_interval <- predict.lm(mo, data, interval="prediction")  # 计算区间预测值
+  confidence_interval <- predict.lm(mo, data, interval="confidence")  # 计算置信区间预测值
+  prediction_interval <- predict.lm(mo, data, interval="prediction")  # 计算预测区间预测值
   ```
 
 - 绘制区间图
@@ -82,6 +93,16 @@
   polygon(c(data_order$x,rev(data_order$x)),c(confidence_interval_order[,2],rev(confidence_interval_order[,3])),col = "gray",border = NA)  # 其中polygon为绘制多边形的函数，rev为排序函数
   abline(mo, col="red", lwd=2)  
   points(data$x, data$y, pch = 16)  
+  ```
+
+## 预测相关
+
+- 新值预测
+
+  ```R
+  new <- data.frame(x = 3.5)  # 生成新的数据
+  predict.lm(mo, new, interval="prediction")  # 点预测+预测上下界
+  predict.lm(mo, new, interval="confidence")  # 点预测+置信上下界
   ```
 
 ## 随机数
