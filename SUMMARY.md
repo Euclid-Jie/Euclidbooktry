@@ -5,6 +5,7 @@
     * [时间格式数据处理](时间格式转换.md)
     * [Numpy函数](Numpy相关.md)
     * [python的IDE配置](Python的IDE配置.md)
+* [R语言操作](R语言操作.md)
 * [网络爬虫](爬虫相关.md)
   * [BeatifulSoup](BeatifulSoup使用.md)
   * [Selenium](Selenium爬虫相关.md)
