@@ -16,3 +16,46 @@ mongod --dbpath D:\Euclid_Jie\DBdata
 - 更进一步，将`bat`文件放在自己熟悉的地方，然后将其快捷方式放在桌面。这样既保证了不会误删文件，又可以对快捷方式的图标进行自定义。
   - 图标`ICO`文件生成[网站](http://www.ico51.cn/)
   - 图标下载[网站集合](https://zhuanlan.zhihu.com/p/431105940)，个人比较推荐的[网站](https://www.iconfinder.com/search/icons?price=free)
+
+## 构建`bat`的几种`cmd`命令
+
+- 切换路径
+
+  ```shell
+  E:  # 先切换磁盘
+  cd E:\Euclidbooktry  # 再切换到路径
+  ```
+
+- 打开软件
+
+  切换到路径后执行`exe`，或者将`exe`加入系统路径
+
+  ```shell
+  Typora.exe
+  ```
+
+- 打开文件
+
+  ```shell
+  SUMMARY.md  # 文件名+后缀
+  ```
+
+- 不关闭`cmd`窗口
+
+  ```shell
+  pause  # 回车后继续
+  cmd    # 继续使用cmd
+  ```
+
+- 隐藏运行
+
+  ```shell
+  @echo off
+  if "%1"=="h" goto begin
+  start mshta vbscript:createobject("wscript.shell").run("""%~nx0"" h",0)(window.close)&&exit
+  :begin  ## 命令写在下面
+  SUMMARY.md 
+  ```
+
+  
+
