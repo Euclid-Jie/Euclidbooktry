@@ -58,7 +58,6 @@
   sqrt(SSE/(length(data$x)-2))
   ```
 
-  测试
 
 ## 模型分析
 
