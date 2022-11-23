@@ -64,4 +64,19 @@ mongod --dbpath D:\Euclid_Jie\DBdata
   taskkill /f /t /im Chrome.exe  # 关闭浏览器
   ```
 
+- 使用`python`执行程序文件
+
+  一般情况下直接
+
+  ```python
+  python demo.py 
+  ```
+
+  如果需要使用虚拟环境执行，需要先cd至虚拟环境目录（不能先激活再运行，会闪退）
+
+  ```python
+  cd D:\Program Files\Anaconda3\envs\scrapy
+  python D:\Euclid_Jie\proxy_pool\proxyPool.py server
+  ```
+
   
