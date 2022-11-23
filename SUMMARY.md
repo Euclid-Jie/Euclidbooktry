@@ -21,3 +21,5 @@
 * [SSH](SSH介绍.md)
 * [BAT](BAT可执行文件.md)
 * [stata](stata相关操作.md)
+* [找文献](https://zhuanlan.zhihu.com/p/360316431)，[下载](http://489.org/)文献
+
