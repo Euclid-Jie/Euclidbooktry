@@ -30,7 +30,7 @@
   pairs(data, main="Basic Scatter Plot Matrix")     # 基础的散点图矩阵
   ```
 
-  ![image-20221123233805183](https://gitee.com/Euclid-Jie/euclid-pic/raw/master/img/202211232341248.png)
+  ![202211232349562](https://gitee.com/Euclid-Jie/euclid-pic/raw/master/img/202211232349562.png)
 
 ## 线图
 
