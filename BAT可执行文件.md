@@ -57,7 +57,7 @@ mongod --dbpath D:\Euclid_Jie\DBdata
   SUMMARY.md 
   ```
 
-- 查看进程
+- 查看进程并结束进程
 
   ```shell
   tasklist  # 查看进程
@@ -65,4 +65,3 @@ mongod --dbpath D:\Euclid_Jie\DBdata
   ```
 
   
-
