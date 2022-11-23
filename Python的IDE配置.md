@@ -1,6 +1,6 @@
 主要介绍几个常用的`Python IDE`工具
 
-## Pycharm
+## `Pycharm`
 
 ### 解释器设置
 
@@ -23,7 +23,7 @@
    创建`.ignore`文件，使得`git`屏蔽上传一些文件，新增屏蔽的时候只需要在`.ignore`中写入文件名就成
 
 
-## Vscode
+## `Vscode`
 
 ### 优点：
 
