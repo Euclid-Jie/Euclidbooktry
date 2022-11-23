@@ -24,6 +24,14 @@
   plot(ylim=c(0,2),hii_order,xlab="",ylab="",pch=16)
   ```
 
+- 散点图矩阵
+
+  ```R
+  pairs(data, main="Basic Scatter Plot Matrix")     # 基础的散点图矩阵
+  ```
+
+  ![image-20221123233805183](https://gitee.com/Euclid-Jie/euclid-pic/raw/master/img/202211232341248.png)
+
 ## 线图
 
 - 添加回归直线
@@ -35,6 +43,15 @@
   ```
 
 # 回归分析
+
+## 数据预处理
+
+- 中心化标准化
+
+  ```R
+  data <- as.data.frame(scale(data, center = T, scale = T))    # 标准化
+  data <- as.data.frame(scale(data, center = T, scale = F))    # 中心化
+  ```
 
 ## 建立模型
 
