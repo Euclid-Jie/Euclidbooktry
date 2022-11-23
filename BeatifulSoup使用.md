@@ -5,8 +5,9 @@
 ## 解析网页源码
 
 ```Python
+import requests
 from bs4 import BeautifulSoup # 导入类库
-response = requests.getUrl, headers=headers, timeout=60)  # 使用request获取网页
+response = requests.get(Url, headers=headers, timeout=60)  # 使用request获取网页
 html = response.content.decode('utf-8', 'ignore')  # 将网页源码转换格式为html
 soup = BeautifulSoup(html, features="lxml")  # 构建soup对象，"lxml"为设置的解析器
 ```
@@ -26,6 +27,12 @@ soup = BeautifulSoup(idList[0].get_attribute('outerHTML')) # 获取元素的内�
 
   ```python
   soup.find_all('div', "classname")  # 查找soup中Class属性为"classname"的"div"标签
+  ```
+
+- 指定其他属性
+
+  ```python
+  soup.find_all('div', {"id":"idName"})  # 查找soup中id属性为"idName"的"div"标签
   ```
 
 ## 获取文本内容
