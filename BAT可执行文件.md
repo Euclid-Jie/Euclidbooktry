@@ -57,5 +57,12 @@ mongod --dbpath D:\Euclid_Jie\DBdata
   SUMMARY.md 
   ```
 
+- 查看进程
+
+  ```shell
+  tasklist  # 查看进程
+  taskkill /f /t /im Chrome.exe  # 关闭浏览器
+  ```
+
   
 
