@@ -40,8 +40,6 @@ element.click() # 点击元素
 ```
 
 ## 4、设置等待
-<a id="selenium_Wait"></a>
-
 ```python
 from selenium.webdriver.support.wait import WebDriverWait
 WebDriverWait(myDriver, 10).until(lambda driver: driver.find_element(By.CLASS_NAME, 'bicon.bar-icon-fp'))

@@ -19,8 +19,6 @@ idList = driver.find_elements_by_class_name('list_con') # driver查找元素
 soup = BeautifulSoup(idList[0].get_attribute('outerHTML')) # 获取元素的内容彬转换为soup对象
 ```
 
-
-
 ## 查找标签
 
 - `find_all`
