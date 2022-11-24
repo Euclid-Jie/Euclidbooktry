@@ -7,11 +7,10 @@
     * [时间格式数据处理](时间格式转换.md)
     * [Numpy函数](Numpy相关.md)
     * [python的IDE配置](Python的IDE配置.md)
-* [R语言操作](R语言操作.md)
+* [R语言](R语言操作.md)
     * [回归分析](R回归分析.md)
     * [绘图专栏](R可视化.md)
     * [图解中心化、标准化对回归的影响](图解中心化.md)
-    
 * [网络爬虫](爬虫相关.md)
   * [BeatifulSoup](BeatifulSoup使用.md)
   * [Selenium](Selenium爬虫相关.md)
@@ -25,5 +24,5 @@
 * [SSH](SSH介绍.md)
 * [BAT](BAT可执行文件.md)
 * [stata](stata相关操作.md)
-* [找文献](https://zhuanlan.zhihu.com/p/360316431)，[下载](http://489.org/)文献
+* [文献相关](文献相关.md)
 
