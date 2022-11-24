@@ -18,6 +18,8 @@
   plot(data$x, data$y, xlab="x", ylab="y", pch=16)   # 参数pch设置点的类型
   ```
 
+  ![image-20221124102949628](https://euclid-picgo.oss-cn-shenzhen.aliyuncs.com/image/image-20221124102949628.png)
+
 - 限制y范围
 
   ```R
@@ -30,7 +32,7 @@
   pairs(data, main="Basic Scatter Plot Matrix")     # 基础的散点图矩阵
   ```
 
-  ![202211232349562](https://gitee.com/Euclid-Jie/euclid-pic/raw/master/img/202211232349562.png)
+  ![image-20221124102919102](https://euclid-picgo.oss-cn-shenzhen.aliyuncs.com/image/image-20221124102919102.png)
 
 ## 线图
 
@@ -41,6 +43,8 @@
   summary(mo)                                         # 打印结果
   abline(mo, col="red", lwd=2)                        # 添加经验回归直线
   ```
+  
+  ![image-20221124103117934](https://euclid-picgo.oss-cn-shenzhen.aliyuncs.com/image/image-20221124103117934.png)
 
 # 回归分析
 
@@ -67,6 +71,8 @@
   ```R
   hii <- hatvalues(mo)                                # 杠杆值
   ```
+
+  ![image-20221124103158877](https://euclid-picgo.oss-cn-shenzhen.aliyuncs.com/image/image-20221124103158877.png)
 
 - 计算模型残差
 
@@ -108,8 +114,10 @@
   polygon(c(data_order$x,rev(data_order$x)),c(prediction_interval_order[,2],rev(prediction_interval_order[,3])),col = rgb(221,234,243,max = 255),border = NA)
   polygon(c(data_order$x,rev(data_order$x)),c(confidence_interval_order[,2],rev(confidence_interval_order[,3])),col = "gray",border = NA)  # 其中polygon为绘制多边形的函数，rev为排序函数
   abline(mo, col="red", lwd=2)  
-  points(data$x, data$y, pch = 16)  
+  points(data$x, data$y, pch = 16) 
   ```
+  
+  ![image-20221124103249152](https://euclid-picgo.oss-cn-shenzhen.aliyuncs.com/image/image-20221124103249152.png)
 
 ## 预测相关
 
