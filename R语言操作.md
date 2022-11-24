@@ -2,11 +2,19 @@
 
 # 数据读写
 
-- 读取csv文件
+- 读取`csv`文件
 
   ```R
   data <- read.csv("fileName.csv")  
   ```
+
+- 读取`txt`数据
+
+  ```
+  data <- read.table("energy.txt",header = TRUE,sep = '\t')            # 读取数据
+  ```
+
+  
 
 # 绘图
 
@@ -30,9 +38,19 @@
 
   ```R
   pairs(data, main="Basic Scatter Plot Matrix")     # 基础的散点图矩阵
+  library(car)
+  scatterplotMatrix(data, spread=F, smoother.args=list(lty=2),regLine=T,smooth = F,main="Scatter Plot Matrix via car Pakage")   # 带有分布图的散点图矩阵
+  library(GGally)
+  ggpairs(data = data)  # 美观的变量矩阵
   ```
-
+  
   ![散点图矩阵](https://euclid-picgo.oss-cn-shenzhen.aliyuncs.com/image/image-20221124102919102.png)
+  
+  ![带有分布图的散点图矩阵](https://euclid-picgo.oss-cn-shenzhen.aliyuncs.com/image/image-20221124123140827.png)
+  
+  ![使用ggpairs绘制的散点图矩阵](https://euclid-picgo.oss-cn-shenzhen.aliyuncs.com/image/image-20221124123306464.png)
+
+
 
 ## 线图
 
@@ -57,13 +75,86 @@
   data <- as.data.frame(scale(data, center = T, scale = F))    # 中心化
   ```
 
+## 变量相关性检验
+
+- 使用`Hmisc`
+
+  ```R
+  library(Hmisc)
+  rcorr(as.matrix(data), type = 'pearson')
+  R <- rcorr(as.matrix(data), type = 'pearson')$r  # 相关系数阵
+  P <- rcorr(as.matrix(data), type = 'pearson')$P  # 相关性检验的P值
+  ```
+
+- 使用`psych`
+
+  ```
+  library(psych)
+  corr.test(data,use="complete")
+  ```
+
+- 热力图
+
+  ```R
+  library(Hmisc)
+  R <- rcorr(as.matrix(data), type = 'pearson')$r # 相关阵
+  library(corrplot)
+  corrplot(R, method="color", addCoef.col='grey', tl.col='black') # 热力图
+  ```
+
+  ![image-20221124123849236](https://euclid-picgo.oss-cn-shenzhen.aliyuncs.com/image/image-20221124123849236.png)
+
+- 使用ggplot绘制热图
+
+  ```R
+  library(Hmisc)
+  R <- rcorr(as.matrix(data), type = 'pearson')$r # 相关阵
+  library(reshape2)  
+  melted_r <- melt(R)  # 将相关系数矩阵拉直
+  library(ggplot2)
+  ggplot(data = melted_r, aes(x=Var1,y=Var2,fill = value)) + # ggplot2 基本图层
+    geom_raster() + # 绘制热力图
+    scale_fill_gradient2(low = rgb(10,8,32,max = 255),mid = rgb(165,24,90,max = 255),
+                         high = rgb(249,228,209,max = 255),limit = c(0,1),
+                         name="Pearson\nCorrelation") + 
+    theme( # 调整图表样式
+      axis.title = element_blank(), # 删除ggplot2的坐标标签
+      panel.background = element_blank(), # 删除ggplot2的灰色背景
+      panel.grid.major = element_blank(), # 删除ggplot2的面板网格
+      panel.border = element_blank(),
+      axis.ticks = element_blank() # 删除ggplot2的轴刻度
+    ) + 
+    geom_text(aes(Var2,Var1,label = round(value,2)),
+              color = '#228B22',size = 2) # 加上相关系数数值
+  ```
+
+  ![image-20221124124310441](https://euclid-picgo.oss-cn-shenzhen.aliyuncs.com/image/image-20221124124310441.png)
+
+## 偏相关系数
+
+在多要素所构成的系统中，当研究某一个要素对另一个要素的影响或相关程度时，把其他要素的影响视作常数（保持不变），即暂时不考虑其他要素影响，单独研究两个要素之间的相互关系的密切程度，所得数值结果为偏相关系数
+
+- 计算偏相关系数并绘图
+
+  ```
+  library(corpcor)
+  cor2pcor(R) # 计算得到偏相关阵
+  library(corrplot)
+  corrplot(cor2pcor(R), method="color", addCoef.col='grey', tl.col='black') # 热力图
+  ```
+
+  
+
 ## 建立模型
 
 - 最小二乘回归
 
   ```R
-  mo <- lm(y~x,data)                                  # 最小二乘回归
-  summary(mo)                                         # 打印结果
+  model <- lm(y~x1+x2+x3+x4+x5, data)     # 最小二乘回归
+  #model <- lm(y~0+x1+x2+x3+x4+x5, data)   # 无截距项最小二乘回归
+  fitted(model)                           # 拟合值
+  model$coefficients                      # 回归系数
+  model$residuals                         # 残差
   ```
 
 - 计算杠杆值
@@ -81,6 +172,20 @@
   sqrt(SSE/(length(data$x)-2))
   ```
 
+## 回归模型检验
+
+- 显著性检验
+
+  ```R
+  summary(model)$r.squared         # R-square
+  summary(model)$adj.r.squared     # Adjusted R-square
+  sum((result - mean(result))^2)   # SSR
+  sum((data$y - result)^2)         # SSE
+  sum((data$y - mean(data$y))^2)   # SST, and SST = SSR + SSE
+  plot(fitted(model), model$residuals, pch = 19, xlab = "fitted values",ylab = "residuals") # 残差图
+  ```
+
+  ![image-20221124124627132](https://euclid-picgo.oss-cn-shenzhen.aliyuncs.com/image/image-20221124124627132.png)
 
 ## 模型分析
 
