@@ -18,7 +18,7 @@
   plot(data$x, data$y, xlab="x", ylab="y", pch=16)   # 参数pch设置点的类型
   ```
 
-  ![image-20221124102949628](https://euclid-picgo.oss-cn-shenzhen.aliyuncs.com/image/image-20221124102949628.png)
+  ![简单散点图](https://euclid-picgo.oss-cn-shenzhen.aliyuncs.com/image/image-20221124102949628.png)
 
 - 限制y范围
 
@@ -32,7 +32,7 @@
   pairs(data, main="Basic Scatter Plot Matrix")     # 基础的散点图矩阵
   ```
 
-  ![image-20221124102919102](https://euclid-picgo.oss-cn-shenzhen.aliyuncs.com/image/image-20221124102919102.png)
+  ![散点图矩阵](https://euclid-picgo.oss-cn-shenzhen.aliyuncs.com/image/image-20221124102919102.png)
 
 ## 线图
 
@@ -44,7 +44,7 @@
   abline(mo, col="red", lwd=2)                        # 添加经验回归直线
   ```
   
-  ![image-20221124103117934](https://euclid-picgo.oss-cn-shenzhen.aliyuncs.com/image/image-20221124103117934.png)
+  ![添加经验回归拟合直线的散点图](https://euclid-picgo.oss-cn-shenzhen.aliyuncs.com/image/image-20221124103117934.png)
 
 # 回归分析
 
@@ -72,7 +72,7 @@
   hii <- hatvalues(mo)                                # 杠杆值
   ```
 
-  ![image-20221124103158877](https://euclid-picgo.oss-cn-shenzhen.aliyuncs.com/image/image-20221124103158877.png)
+  ![查看杠杆值(按照X大小顺序排序)](https://euclid-picgo.oss-cn-shenzhen.aliyuncs.com/image/image-20221124103158877.png)
 
 - 计算模型残差
 
@@ -117,7 +117,7 @@
   points(data$x, data$y, pch = 16) 
   ```
   
-  ![image-20221124103249152](https://euclid-picgo.oss-cn-shenzhen.aliyuncs.com/image/image-20221124103249152.png)
+  ![置信区间和预测区间](https://euclid-picgo.oss-cn-shenzhen.aliyuncs.com/image/image-20221124103249152.png)
 
 ## 预测相关
 
