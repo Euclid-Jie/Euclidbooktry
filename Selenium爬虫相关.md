@@ -19,6 +19,7 @@ myDriver.maximize_window()  # 最大化窗口
 
 ```python
 driver.find_elements_by_class_name('list_con') # 通过class的方式获取，也可以使用其他方式
+find_elements(By.XPATH,"//*[contains(@href, 'pdf')]").get_attribute('href')
 ```
 
 `selenium`更新后，之前的获取元素的方式发生了改变，主要差异为引入了`By`,其他的参数直接点开`By`查看即可
