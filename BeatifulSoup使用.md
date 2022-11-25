@@ -33,6 +33,12 @@ soup = BeautifulSoup(idList[0].get_attribute('outerHTML')) # 获取元素的内�
   soup.find_all('div', {"id":"idName"})  # 查找soup中id属性为"idName"的"div"标签
   ```
 
+- 使用`Xpath`，下一篇有正则用法
+
+  ```
+  self.driver.find_elements(By.XPATH, '//*[@id="gs_cit-x"]/span[1]')[0].click()
+  ```
+
 ## 获取文本内容
 
 - `text`
@@ -40,6 +46,4 @@ soup = BeautifulSoup(idList[0].get_attribute('outerHTML')) # 获取元素的内�
   ```Python
   divs.text # 直接获取"div"标签下的文本信息
   ```
-
-  
 

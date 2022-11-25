@@ -29,6 +29,17 @@ from selenium.webdriver.common.by import By
 driver.find_elements(By.CLASS_NAME, 'list_con'))
 ```
 
+同样可以使用`Xpath`获取元素，语法为`//节点名[starts-with(@元素名, "相同部分")]`
+
+```python
+//div[starts-with(@id,'ma')]  # 选取id值以ma开头的div节点
+//div[contains(@id,'ma')]  # 选取id值含有ma的div节点
+//div[contains(@id,'ma') and contains(@id,'in')]  # 选取id值包含ma和in的div
+//div[contians(text(),'ma')]  # 选取节点文本包含ma的div节点
+```
+
+
+
 ## 3、处理元素数据
 
 我习惯于使用`BeatifulSoup`处理，当然也可以使用`selenium`套件处理，等有空我再学习一下补上
