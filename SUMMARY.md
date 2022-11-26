@@ -13,7 +13,8 @@
     * [图解中心化、标准化对回归的影响](图解中心化.md)
 * [课程知识点](研究生课程相关.md)
     * [因子分析](因子分析.md)
-
+    * [因子分析Copy](因子分析Copy.md)
+    
 * [网络爬虫](爬虫相关.md)
   * [BeatifulSoup](BeatifulSoup使用.md)
   * [Selenium](Selenium爬虫相关.md)
