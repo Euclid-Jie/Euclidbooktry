@@ -11,6 +11,7 @@
     * [回归分析](R回归分析.md)
     * [绘图专栏](R可视化.md)
     * [图解中心化、标准化对回归的影响](图解中心化.md)
+* [课程知识点](研究生课程相关.md)
 * [网络爬虫](爬虫相关.md)
   * [BeatifulSoup](BeatifulSoup使用.md)
   * [Selenium](Selenium爬虫相关.md)
