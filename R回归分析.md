@@ -77,7 +77,7 @@ R语言回归分析相关流程
   corrplot(cor2pcor(R), method="color", addCoef.col='grey', tl.col='black') # 热力图
   ```
 
-  
+  ![偏相关系数图](https://euclid-picgo.oss-cn-shenzhen.aliyuncs.com/image/202211261537897.png)
 
 ## 建立模型
 
@@ -167,5 +167,3 @@ R语言回归分析相关流程
   predict.lm(mo, new, interval="prediction")  # 点预测+预测上下界
   predict.lm(mo, new, interval="confidence")  # 点预测+置信上下界
   ```
-
-# 
