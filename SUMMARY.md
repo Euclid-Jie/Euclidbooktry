@@ -1,5 +1,6 @@
 * [Intraduction](README.md)
 * [旁门左道](奇怪的技巧.md)
+    * [既爱又恨的编码格式](编码格式.md)
 * [Python](Python.md)
     * [Python虚拟环境](虚拟环境.md)
     * [Python类库](Python类库安装.md)

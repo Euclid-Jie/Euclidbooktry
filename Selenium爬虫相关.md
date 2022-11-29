@@ -57,3 +57,28 @@ from selenium.webdriver.support.wait import WebDriverWait
 WebDriverWait(myDriver, 10).until(lambda driver: driver.find_element(By.CLASS_NAME, 'bicon.bar-icon-fp'))
 ```
 
+## 5、托管指定端口的浏览器
+
+对于知乎这种网站，使用selenium控制开启一个浏览器往往会被识别，所以需要我们配置一个浏览器（进行登录等常规操作）后，再使用代码直接托管，具体流程如下：
+
+- 将Chrome发送到桌面快捷方式，并设置其端口和缓存文件路径
+
+  <img src="https://euclid-picgo.oss-cn-shenzhen.aliyuncs.com/image/202211291930932.png" alt="image-20221129193010882"  />
+
+  目标处填入“程序路径 端口设置 文件路径”，具体如下
+
+    ```
+    "C:\Program Files\Google\Chrome\Application\chrome.exe" --remote-debugging-port=9222 --user-data-dir="D:\Euclid_Jie"
+    ```
+
+- 使用Python接管浏览器
+
+  ```python
+  from selenium import webdriver
+  options = webdriver.ChromeOptions()
+  options.add_experimental_option("debuggerAddress", "127.0.0.1:9222")  # 接管
+  driver = webdriver.Chrome(options=options)  # 设置参数
+  driver.get(Url)  # 跳转网页
+  ```
+  
+  
