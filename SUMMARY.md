@@ -3,7 +3,7 @@
     * [既爱又恨的编码格式](编码格式.md)
 * [Python](Python.md)
     * [Python虚拟环境](虚拟环境.md)
-    * [Python类库](Python类库安装.md)
+    * [Python类库](Python类库.md)
     * [DataFrame函数](DataFrame函数相关.md)
     * [时间格式数据处理](时间格式转换.md)
     * [Numpy函数](Numpy相关.md)
