@@ -99,6 +99,7 @@ git config --global core.quotepath false
 
 ```shell
 git config --global --add safe.directory F:/GitHub/my-project
+git config --global --add safe.directory * 
 ```
 
 ## Git无法Push，显示超时
@@ -119,6 +120,8 @@ git config --global --unset https.proxy
 ```shell
 git config --global http.sslVerify "false"
 ```
+
+一般来说，如果实在解决不了的话，可以挂梯子后使用github desktop解决
 
 # 使用Pycharm
 
