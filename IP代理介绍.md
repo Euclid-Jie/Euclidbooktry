@@ -13,6 +13,7 @@ git clone git@github.com:jhao104/proxy_pool.git
 `Redis`是一个用于存储键值对的简单数据库，可以从GitHub[下载](https://github.com/tporadowski/redis/releases)，也可以上[官网](https://redis.io/)，安装完成后，运行`redis-cli.exe`，如显示`127.0.0.1:6379>`，说明安装成功，并在指定端口开启服务，进一步可以配置密码，[具体教程](https://www.redis.net.cn/tutorial/3503.html)
 
 ```shell
+redis-cli.exe -h 127.0.0.1 -p 6379
 config set requirepass 123456  # 设置密码为123456
 ```
 

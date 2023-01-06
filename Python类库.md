@@ -10,6 +10,27 @@
 
 - 注意安装Python的环境，不要装到别的环境中，可修改`pycharm`中的终端为`cmd`，可使得每次使用当前环境执行命令
 
+## 安装whl
+
+直接使用pip安装对应下载的whl文件即可，注意whl文件的路径，或者将whl移入到Anaconda\Lib\site-packages下
+
+```python
+pip install Path\pakageName.whl
+```
+
+
+
+## 判断下载win32还是amd64的whl文件
+
+如果返回32bit，则下载win32，一般都是64位，所以下载amd64.whl
+
+```python
+import platform
+platform.architecture()
+```
+
+
+
 # 值得记一下的库
 
 ## tqdm

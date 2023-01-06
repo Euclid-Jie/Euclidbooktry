@@ -114,7 +114,11 @@ git config --global --unset http.proxy
 git config --global --unset https.proxy
 ```
 
+有时候是因为SSL证书问题，需执行
 
+```shell
+git config --global http.sslVerify "false"
+```
 
 # 使用Pycharm
 
