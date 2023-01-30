@@ -26,7 +26,7 @@ find_elements(By.XPATH,"//*[contains(@href, 'pdf')]").get_attribute('href')
 
 ```python
 from selenium.webdriver.common.by import By
-driver.find_elements(By.CLASS_NAME, 'list_con'))
+driver.find_elements(By.CLASS_NAME, 'list_con')
 ```
 
 同样可以使用`Xpath`获取元素，语法为`//节点名[starts-with(@元素名, "相同部分")]`
