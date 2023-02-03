@@ -152,6 +152,7 @@ git config --global http.sslVerify "false"
 - 不同协议超时有不同的排除流程
   - git对应的是ssh协议，检查自己的电脑的ssh私钥和github网站上的公钥是否配置好
   - http协议则是因为墙，试试代理
+  - 建议使用git ssh协议，兼容性更好
 
 # 使用Pycharm
 
