@@ -4,7 +4,21 @@
 
 ## Git配置
 
-Git官网下载并安装，配置邮箱
+Git官网下载并安装，配置邮箱、
+
+- 配置邮箱和姓名
+
+  ```shell
+  git config --global user.email "youremail"
+  git config --global user.name "yourname"
+  ```
+
+- 查看邮箱和姓名
+
+  ```shell
+  git config --global user.email
+  git config --global user.name
+  ```
 
 ## Git命令
 
@@ -122,6 +136,22 @@ git config --global http.sslVerify "false"
 ```
 
 一般来说，如果实在解决不了的话，可以挂梯子后使用github desktop解决
+
+### 建议从以下几个方面排查
+
+- 检查协议
+
+  一般远程仓库的连接有两种方式，git或者http，直接检测远程链接即可
+
+  ```
+  git remote -v
+  ```
+
+  返回值开头是啥就是啥协议
+
+- 不同协议超时有不同的排除流程
+  - git对应的是ssh协议，检查自己的电脑的ssh私钥和github网站上的公钥是否配置好
+  - http协议则是因为墙，试试代理
 
 # 使用Pycharm
 
