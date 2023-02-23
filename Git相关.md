@@ -194,6 +194,10 @@ git config --global http.sslVerify "false"
 
 新分支的时候，可以根据分支需要进行命名（可以为汉字）
 
+# tipis
+
+- 修改项目文件的*~.git\config*中的远程地址，可以直接修改http协议为ssh协议
+
 
 
 

@@ -219,6 +219,38 @@ Pandas.DataFrame.diff(axis=1,periods=1)
 self.wheredf['diff'] = self.wheredf[['Vgroup']].diff()
 ```
 
+## 使用iterrows生成迭代器
+
+```python
+for index, row in data.iterrows():
+    # 针对每行数据计算变动
+    row_dict = {}
+    row_dict['index'] = index
+    row_dict['updateTime'] = row['updateTime']
+    if index > 0:
+        for col in cols:
+            if data.iloc[index - 1][col] == np.NaN or data.iloc[index][col] == np.NaN:
+                row_dict[col + '_rate'] = np.NaN
+            d1 = float(data.iloc[index - 1][col])
+            d2 = float(data.iloc[index][col])
+            rate = (d2 - d1) / d1
+            row_dict[col + '_rate'] = rate
+        rate_df = rate_df.append(row_dict, ignore_index=True)
+return rate_df
+```
+
+## 使用GroupBy生产遍历序列
+
+```
+for author_group, group_df in self.mergedata.groupby(['author', 'secCode']):
+    # 按照每年分组查询
+    for year, year_df in group_df.groupby('foreYear'):
+        year_df = year_df.sort_values(by='writeDate')  # 对研报预测时间进行排序
+        year_df[field + '_forecast_change'] = year_df.groupby('author')[field].apply(lambda x: (x - x.shift(1)) / x.shift(1))  # 根据要求公式得到想预测字段的变动并储存
+        year_df = year_df[['author', 'secName', 'foreYear', field + '_forecast_change', 'writeDate', 'publishDate']]
+        self.result = pd.concat([self.result, year_df])
+```
+
 # DataFrame切片
 
 ## loc

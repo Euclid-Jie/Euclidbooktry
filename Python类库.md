@@ -18,6 +18,22 @@
 pip install Path\pakageName.whl
 ```
 
+## Conda命令
+
+查找可用的安装版本，并在指定版本安装
+
+```shell
+conda search numpy
+conda install numpy=1.9.3
+```
+
+查看环境和删除
+
+```
+conda env list
+conda env remove --name
+```
+
 
 
 ## 判断下载win32还是amd64的whl文件
