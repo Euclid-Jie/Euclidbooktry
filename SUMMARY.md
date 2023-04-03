@@ -30,6 +30,7 @@
 * [服务器相关](服务器相关记录.md)
 * [Mongo数据库](数据库相关.md)
 * [Redis数据库](Redis数据库.md)
+*  [MySQL](MySQL相关.md) 
 * [正则表达式](正则表达式.md)
 * [GitBook](GitBook相关.md)
 * [Uqer](Uqer.md)
