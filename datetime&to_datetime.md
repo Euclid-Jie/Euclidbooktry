@@ -51,14 +51,14 @@ day2.strftime('%Y%m%d')
 # Out[40]: '20200101'  # type为str
 ```
 
-### timestamps.Timestamp转datetime.date
+## timestamps.Timestamp转datetime.date
 
 ```python
 day2.date()
 # Out[41]: datetime.date(2020, 1, 1)  # type为datetime.date
 ```
 
-### timestamps.Timestamp查看周几
+## timestamps.Timestamp查看周几
 
 ```python
 day2.day_name()
