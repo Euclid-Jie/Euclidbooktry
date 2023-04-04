@@ -1,4 +1,4 @@
-`beatifulsoup`包的主要作用是将`str`格式的网页源码转换成`soup`格式，`soup`格式可以通过类似`json`格式的方式进行索引。
+`beautifulsoup`包的主要作用是将`str`格式的网页源码转换成`soup`格式，`soup`格式可以通过类似`json`格式的方式进行索引。
 
 # 主要流程介绍
 
