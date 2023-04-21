@@ -44,6 +44,8 @@ demo_df['updateTime'] = demo_df['updateTime'].apply(lambda x:x.split(' ')[0])
 
 ## 使用groupby进行分组操作
 
+[【S01E12】pandas之函数应用：map、apply、agg和transform - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/56432792)
+
 ```python
 Pandas.DataFrame.groupby(by,axis)
 ```
