@@ -1,0 +1,852 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Redis数据库 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="MySQL相关.html" />
+    
+    
+    <link rel="prev" href="数据库相关.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="暑期实习投递.html">
+            
+                <a href="暑期实习投递.html">
+            
+                    
+                    没办法，得投暑期实习
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="资源网站.html">
+            
+                <a href="资源网站.html">
+            
+                    
+                    资源网站
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="奇怪的技巧.html">
+            
+                <a href="奇怪的技巧.html">
+            
+                    
+                    旁门左道
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="编码格式.html">
+            
+                <a href="编码格式.html">
+            
+                    
+                    既爱又恨的编码格式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="datetime&to_datetime.html">
+            
+                <a href="datetime&to_datetime.html">
+            
+                    
+                    datetime与pd.to_datetime对比
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="Python.html">
+            
+                <a href="Python.html">
+            
+                    
+                    Python
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="虚拟环境.html">
+            
+                <a href="虚拟环境.html">
+            
+                    
+                    Python虚拟环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="Python类库.html">
+            
+                <a href="Python类库.html">
+            
+                    
+                    Python类库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="DataFrame函数相关.html">
+            
+                <a href="DataFrame函数相关.html">
+            
+                    
+                    DataFrame函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="时间格式转换.html">
+            
+                <a href="时间格式转换.html">
+            
+                    
+                    时间格式数据处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="Numpy相关.html">
+            
+                <a href="Numpy相关.html">
+            
+                    
+                    Numpy函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="Python的IDE配置.html">
+            
+                <a href="Python的IDE配置.html">
+            
+                    
+                    python的IDE配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="python_Package相关.html">
+            
+                <a href="python_Package相关.html">
+            
+                    
+                    创建Package并上传至Pypi
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="R语言操作.html">
+            
+                <a href="R语言操作.html">
+            
+                    
+                    R语言
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="R英文分词.html">
+            
+                <a href="R英文分词.html">
+            
+                    
+                    英文分词
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="R回归分析.html">
+            
+                <a href="R回归分析.html">
+            
+                    
+                    回归分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="R可视化.html">
+            
+                <a href="R可视化.html">
+            
+                    
+                    绘图专栏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="图解中心化.html">
+            
+                <a href="图解中心化.html">
+            
+                    
+                    图解中心化、标准化对回归的影响
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="研究生课程相关.html">
+            
+                <a href="研究生课程相关.html">
+            
+                    
+                    课程知识点
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="回归分析知识点.html">
+            
+                <a href="回归分析知识点.html">
+            
+                    
+                    回归分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="因子分析.html">
+            
+                <a href="因子分析.html">
+            
+                    
+                    因子分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="残差诊断.html">
+            
+                <a href="残差诊断.html">
+            
+                    
+                    残差诊断
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="异方差.html">
+            
+                <a href="异方差.html">
+            
+                    
+                    异方差检验
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="爬虫相关.html">
+            
+                <a href="爬虫相关.html">
+            
+                    
+                    网络爬虫
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="BeatifulSoup使用.html">
+            
+                <a href="BeatifulSoup使用.html">
+            
+                    
+                    BeautifulSoup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="Selenium爬虫相关.html">
+            
+                <a href="Selenium爬虫相关.html">
+            
+                    
+                    Selenium
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="Urllib3相关.html">
+            
+                <a href="Urllib3相关.html">
+            
+                    
+                    Urllib3
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="IP代理介绍.html">
+            
+                <a href="IP代理介绍.html">
+            
+                    
+                    IP代理池
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="Git相关.html">
+            
+                <a href="Git相关.html">
+            
+                    
+                    Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="服务器相关记录.html">
+            
+                <a href="服务器相关记录.html">
+            
+                    
+                    服务器相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="数据库相关.html">
+            
+                <a href="数据库相关.html">
+            
+                    
+                    Mongo数据库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.12" data-path="Redis数据库.html">
+            
+                <a href="Redis数据库.html">
+            
+                    
+                    Redis数据库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="MySQL相关.html">
+            
+                <a href="MySQL相关.html">
+            
+                    
+                    MySQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="正则表达式.html">
+            
+                <a href="正则表达式.html">
+            
+                    
+                    正则表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="GitBook相关.html">
+            
+                <a href="GitBook相关.html">
+            
+                    
+                    GitBook
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="Uqer.html">
+            
+                <a href="Uqer.html">
+            
+                    
+                    Uqer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="SSH介绍.html">
+            
+                <a href="SSH介绍.html">
+            
+                    
+                    SSH
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="BAT可执行文件.html">
+            
+                <a href="BAT可执行文件.html">
+            
+                    
+                    BAT
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="stata相关操作.html">
+            
+                <a href="stata相关操作.html">
+            
+                    
+                    stata
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="装机.html">
+            
+                <a href="装机.html">
+            
+                    
+                    装机
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="文献相关.html">
+            
+                <a href="文献相关.html">
+            
+                    
+                    文献相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="本文排版.html">
+            
+                <a href="本文排版.html">
+            
+                    
+                    本文排版
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Redis数据库</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p>&#x76F8;&#x5173;&#x94FE;&#x63A5;&#xFF1A;</p>
+<ul>
+<li><a href="http://c.biancheng.net/redis/python.html" target="_blank">Python&#x4F7F;&#x7528;Redis (biancheng.net)</a></li>
+<li><p><a href="https://www.runoob.com/w3cnote/python-redis-intro.html" target="_blank">Python redis &#x4F7F;&#x7528;&#x4ECB;&#x7ECD; | &#x83DC;&#x9E1F;&#x6559;&#x7A0B; (runoob.com)</a></p>
+</li>
+<li><p><a href="https://zhuanlan.zhihu.com/p/51608696" target="_blank">Python&#x4E2D;&#x4F7F;&#x7528;Redis&#x8BE6;&#x89E3; - &#x77E5;&#x4E4E; (zhihu.com)</a></p>
+</li>
+</ul>
+<h2 id="&#x94FE;&#x63A5;redis">&#x94FE;&#x63A5;Redis</h2>
+<h3 id="&#x5F00;&#x542F;redis&#x670D;&#x52A1;">&#x5F00;&#x542F;Redis&#x670D;&#x52A1;</h3>
+<p>&#x5B89;&#x88C5;Redis&#x540E;&#xFF0C;&#x6267;&#x884C;exe&#x7A0B;&#x5E8F;&#x5373;&#x53EF;&#x5F00;&#x542F;&#x7AEF;&#x53E3;</p>
+<pre><code class="lang-shell">cd D:\Program Files\Redis
+redis-server.exe
+</code></pre>
+<h3 id="&#x5173;&#x95ED;redis&#x670D;&#x52A1;">&#x5173;&#x95ED;Redis&#x670D;&#x52A1;</h3>
+<pre><code class="lang-shell">redis-server --service-stop
+</code></pre>
+<h3 id="&#x4F7F;&#x7528;python&#x94FE;&#x63A5;">&#x4F7F;&#x7528;Python&#x94FE;&#x63A5;</h3>
+<ul>
+<li>&#x5BC6;&#x7801;&#xFF1A;password</li>
+<li>&#x6570;&#x636E;&#x5E93;&#x7F16;&#x53F7;&#xFF08;0-15&#xFF09;&#xFF1A;db</li>
+</ul>
+<pre><code class="lang-python"><span class="hljs-keyword">import</span> redis
+pool = redis.ConnectionPool(host=<span class="hljs-string">&apos;localhost&apos;</span>, port=<span class="hljs-number">6379</span>, db=<span class="hljs-number">1</span>, password=<span class="hljs-keyword">None</span>, decode_responses=<span class="hljs-keyword">True</span>)
+r = redis.Redis(connection_pool=pool)
+</code></pre>
+<h2 id="&#x5199;&#x5165;&#x6570;&#x636E;">&#x5199;&#x5165;&#x6570;&#x636E;</h2>
+<h3 id="&#x5199;&#x5165;&#x5355;&#x4E2A;&#x952E;&#x503C;&#x5BF9;">&#x5199;&#x5165;&#x5355;&#x4E2A;&#x952E;&#x503C;&#x5BF9;</h3>
+<pre><code class="lang-python">r.set(<span class="hljs-string">&apos;webname&apos;</span>,<span class="hljs-string">&apos;www.biancheng.net&apos;</span>)
+</code></pre>
+<h3 id="&#x5199;&#x5165;&#x591A;&#x4E2A;&#x952E;&#x503C;&#x5BF9;">&#x5199;&#x5165;&#x591A;&#x4E2A;&#x952E;&#x503C;&#x5BF9;</h3>
+<pre><code class="lang-python">r.mset({<span class="hljs-string">&apos;username&apos;</span>:<span class="hljs-string">&apos;jacak&apos;</span>,<span class="hljs-string">&apos;password&apos;</span>:<span class="hljs-string">&apos;123&apos;</span>})
+</code></pre>
+<h2 id="&#x5220;&#x9664;">&#x5220;&#x9664;</h2>
+<h3 id="&#x5220;&#x9664;&#x5E26;&#x6307;&#x5B9A;&#x5B57;&#x7B26;&#x7684;key&#x53CA;value">&#x5220;&#x9664;&#x5E26;&#x6307;&#x5B9A;&#x5B57;&#x7B26;&#x7684;key&#x53CA;value</h3>
+<pre><code class="lang-python"><span class="hljs-comment"># &#x5220;&#x9664;&#x5E26;&#x7279;&#x6B8A;&#x7B26;&#x53F7;&#x7684;&#x6807;&#x9898;</span>
+<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> pd.DataFrame(data={<span class="hljs-string">&apos;data&apos;</span>:r.keys(<span class="hljs-string">&apos;*&apos;</span>)})[pd.DataFrame(data={<span class="hljs-string">&apos;data&apos;</span>:r.keys(<span class="hljs-string">&apos;*&apos;</span>)}).data.str.contains(<span class="hljs-string">&apos;:&apos;</span>)].data.to_list():
+    r.delete(i)
+</code></pre>
+<h2 id="&#x4FEE;&#x6539;key">&#x4FEE;&#x6539;Key</h2>
+<pre><code class="lang-python">r.rename(<span class="hljs-string">&apos;name_2&apos;</span>, <span class="hljs-string">&apos;name_100&apos;</span>)
+</code></pre>
+<h2 id="&#x5728;&#x670D;&#x52A1;&#x5668;&#x90E8;&#x7F72;redis">&#x5728;&#x670D;&#x52A1;&#x5668;&#x90E8;&#x7F72;Redis</h2>
+<p>&#x9700;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x662F;&#xFF0C;&#x9700;&#x8981;&#x5728;ESC&#x5B89;&#x5168;&#x7EC4;&#x4E2D;&#x5F00;&#x542F;Redis&#x670D;&#x52A1;&#x7684;&#x7AEF;&#x53E3;6379</p>
+<ul>
+<li><a href="https://blog.csdn.net/qq_42528769/article/details/105024569" target="_blank">(89&#x6761;&#x6D88;&#x606F;) &#x963F;&#x91CC;&#x4E91;ECS&#x4E4B;&#x642D;&#x5EFA;Redis&#x73AF;&#x5883;(&#x516B;)_zheng_zq666&#x7684;&#x535A;&#x5BA2;-CSDN&#x535A;&#x5BA2;</a></li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="数据库相关.html" class="navigation navigation-prev " aria-label="Previous page: Mongo数据库">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="MySQL相关.html" class="navigation navigation-next " aria-label="Next page: MySQL">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Redis数据库","level":"1.12","depth":1,"next":{"title":"MySQL","level":"1.13","depth":1,"path":"MySQL相关.md","ref":"MySQL相关.md","articles":[]},"previous":{"title":"Mongo数据库","level":"1.11","depth":1,"path":"数据库相关.md","ref":"数据库相关.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Redis数据库.md","mtime":"2023-05-27T05:43:13.998Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-05-27T05:44:45.161Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

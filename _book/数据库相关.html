@@ -1,0 +1,876 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Mongo数据库 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Redis数据库.html" />
+    
+    
+    <link rel="prev" href="服务器相关记录.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="暑期实习投递.html">
+            
+                <a href="暑期实习投递.html">
+            
+                    
+                    没办法，得投暑期实习
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="资源网站.html">
+            
+                <a href="资源网站.html">
+            
+                    
+                    资源网站
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="奇怪的技巧.html">
+            
+                <a href="奇怪的技巧.html">
+            
+                    
+                    旁门左道
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="编码格式.html">
+            
+                <a href="编码格式.html">
+            
+                    
+                    既爱又恨的编码格式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="datetime&to_datetime.html">
+            
+                <a href="datetime&to_datetime.html">
+            
+                    
+                    datetime与pd.to_datetime对比
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="Python.html">
+            
+                <a href="Python.html">
+            
+                    
+                    Python
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="虚拟环境.html">
+            
+                <a href="虚拟环境.html">
+            
+                    
+                    Python虚拟环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="Python类库.html">
+            
+                <a href="Python类库.html">
+            
+                    
+                    Python类库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="DataFrame函数相关.html">
+            
+                <a href="DataFrame函数相关.html">
+            
+                    
+                    DataFrame函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="时间格式转换.html">
+            
+                <a href="时间格式转换.html">
+            
+                    
+                    时间格式数据处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="Numpy相关.html">
+            
+                <a href="Numpy相关.html">
+            
+                    
+                    Numpy函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="Python的IDE配置.html">
+            
+                <a href="Python的IDE配置.html">
+            
+                    
+                    python的IDE配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="python_Package相关.html">
+            
+                <a href="python_Package相关.html">
+            
+                    
+                    创建Package并上传至Pypi
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="R语言操作.html">
+            
+                <a href="R语言操作.html">
+            
+                    
+                    R语言
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="R英文分词.html">
+            
+                <a href="R英文分词.html">
+            
+                    
+                    英文分词
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="R回归分析.html">
+            
+                <a href="R回归分析.html">
+            
+                    
+                    回归分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="R可视化.html">
+            
+                <a href="R可视化.html">
+            
+                    
+                    绘图专栏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="图解中心化.html">
+            
+                <a href="图解中心化.html">
+            
+                    
+                    图解中心化、标准化对回归的影响
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="研究生课程相关.html">
+            
+                <a href="研究生课程相关.html">
+            
+                    
+                    课程知识点
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="回归分析知识点.html">
+            
+                <a href="回归分析知识点.html">
+            
+                    
+                    回归分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="因子分析.html">
+            
+                <a href="因子分析.html">
+            
+                    
+                    因子分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="残差诊断.html">
+            
+                <a href="残差诊断.html">
+            
+                    
+                    残差诊断
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="异方差.html">
+            
+                <a href="异方差.html">
+            
+                    
+                    异方差检验
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="爬虫相关.html">
+            
+                <a href="爬虫相关.html">
+            
+                    
+                    网络爬虫
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="BeatifulSoup使用.html">
+            
+                <a href="BeatifulSoup使用.html">
+            
+                    
+                    BeautifulSoup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="Selenium爬虫相关.html">
+            
+                <a href="Selenium爬虫相关.html">
+            
+                    
+                    Selenium
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="Urllib3相关.html">
+            
+                <a href="Urllib3相关.html">
+            
+                    
+                    Urllib3
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="IP代理介绍.html">
+            
+                <a href="IP代理介绍.html">
+            
+                    
+                    IP代理池
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="Git相关.html">
+            
+                <a href="Git相关.html">
+            
+                    
+                    Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="服务器相关记录.html">
+            
+                <a href="服务器相关记录.html">
+            
+                    
+                    服务器相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.11" data-path="数据库相关.html">
+            
+                <a href="数据库相关.html">
+            
+                    
+                    Mongo数据库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="Redis数据库.html">
+            
+                <a href="Redis数据库.html">
+            
+                    
+                    Redis数据库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="MySQL相关.html">
+            
+                <a href="MySQL相关.html">
+            
+                    
+                    MySQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="正则表达式.html">
+            
+                <a href="正则表达式.html">
+            
+                    
+                    正则表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="GitBook相关.html">
+            
+                <a href="GitBook相关.html">
+            
+                    
+                    GitBook
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="Uqer.html">
+            
+                <a href="Uqer.html">
+            
+                    
+                    Uqer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="SSH介绍.html">
+            
+                <a href="SSH介绍.html">
+            
+                    
+                    SSH
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="BAT可执行文件.html">
+            
+                <a href="BAT可执行文件.html">
+            
+                    
+                    BAT
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="stata相关操作.html">
+            
+                <a href="stata相关操作.html">
+            
+                    
+                    stata
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="装机.html">
+            
+                <a href="装机.html">
+            
+                    
+                    装机
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="文献相关.html">
+            
+                <a href="文献相关.html">
+            
+                    
+                    文献相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="本文排版.html">
+            
+                <a href="本文排版.html">
+            
+                    
+                    本文排版
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Mongo数据库</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p>&#x8BB0;&#x5F55;<code>MonGoDB</code>&#x6570;&#x636E;&#x5E93;&#x7684;&#x4F7F;&#x7528;&#xFF0C;&#x4E3B;&#x8981;&#x4F7F;&#x7528;<code>Python</code>&#x8BED;&#x8A00;&#x3002;</p>
+<h2 id="&#x6570;&#x636E;&#x5E93;&#x542F;&#x52A8;&#x670D;&#x52A1;">&#x6570;&#x636E;&#x5E93;&#x542F;&#x52A8;&#x670D;&#x52A1;</h2>
+<ul>
+<li>&#x542F;&#x52A8;&#x6570;&#x636E;&#x5E93;&#x670D;&#x52A1;</li>
+</ul>
+<p>&#x5207;&#x6362;&#x5230;<code>mogod</code>&#x8DEF;&#x5F84;&#xFF0C;&#x8FD0;&#x884C;<code>mogod</code>&#xFF0C;&#x5E76;&#x6307;&#x5B9A;&#x53C2;&#x6570;</p>
+<pre><code class="lang-shell">mongod --dbpath D:\Euclid_Jie\DBdata
+</code></pre>
+<p>&#x67E5;&#x770B;&#x7AEF;&#x53E3;<a href="http://127.0.0.1:27017/&#xFF0C;&#x82E5;&#x663E;&#x793A;&#x5982;&#x4E0B;&#x5185;&#x5BB9;&#xFF0C;&#x8BF4;&#x660E;&#x670D;&#x52A1;&#x5DF2;&#x7ECF;&#x542F;&#x52A8;" target="_blank">http://127.0.0.1:27017/&#xFF0C;&#x82E5;&#x663E;&#x793A;&#x5982;&#x4E0B;&#x5185;&#x5BB9;&#xFF0C;&#x8BF4;&#x660E;&#x670D;&#x52A1;&#x5DF2;&#x7ECF;&#x542F;&#x52A8;</a></p>
+<pre><code>It looks like you are trying to access MongoDB over HTTP on the native driver port.
+</code></pre><ul>
+<li><p>&#x5173;&#x95ED;&#x6570;&#x636E;&#x5E93;&#x670D;&#x52A1;</p>
+<p>&#x4E8E;&#x670D;&#x52A1;&#x7A97;&#x53E3;&#x6309;&#x4E0B;ctrl+C&#x7ED3;&#x675F;&#x670D;&#x52A1;</p>
+</li>
+<li><p>&#x4F7F;&#x7528;&#x6570;&#x636E;&#x5E93;&#x547D;&#x4EE4;&#x5173;&#x95ED;&#xFF08;&#x9002;&#x7528;&#x4E8E;&#x6570;&#x636E;&#x5E93;&#x5B58;&#x50A8;&#x4F4D;&#x7F6E;&#x9519;&#x8BEF;&#x542F;&#x52A8;&#xFF09;</p>
+<pre><code class="lang-shell">use admin
+db.shutdownServer()
+</code></pre>
+</li>
+</ul>
+<h2 id="&#x6570;&#x636E;&#x5E93;&#x521B;&#x5EFA;&#x53CA;&#x5199;&#x5165;">&#x6570;&#x636E;&#x5E93;&#x521B;&#x5EFA;&#x53CA;&#x5199;&#x5165;</h2>
+<p>&#x4F7F;&#x7528;<code>pymongo</code>&#x5E93;&#x5B8C;&#x6210;&#x5BF9;<code>Mongo</code>&#x7684;&#x64CD;&#x4F5C;</p>
+<ul>
+<li><p>&#x8FDE;&#x63A5;&#x6570;&#x636E;&#x5E93;&#xFF0C;&#x5176;&#x4E2D;<code>DBName</code>&#x4E3A;&#x6570;&#x636E;&#x5E93;&#x7684;&#x540D;&#x5B57;&#xFF0C;<code>collectionName</code>&#x7C7B;&#x4F3C;&#x4E8E;&#x8868;&#x540D;</p>
+<pre><code class="lang-python"><span class="hljs-keyword">import</span> pymongo
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">MongoClient</span><span class="hljs-params">(DBName, collectionName)</span>:</span>
+    <span class="hljs-comment"># &#x8FDE;&#x63A5;&#x6570;&#x636E;&#x5E93;</span>
+    myclient = pymongo.MongoClient(<span class="hljs-string">&quot;mongodb://localhost:27017/&quot;</span>)
+    mydb = myclient[DBName]  <span class="hljs-comment"># &#x6570;&#x636E;&#x5E93;&#x540D;&#x79F0;</span>
+    mycol = mydb[collectionName]  <span class="hljs-comment"># &#x96C6;&#x5408;&#xFF08;&#x8868;&#xFF09;</span>
+    <span class="hljs-keyword">return</span> mycol
+<span class="hljs-comment"># &#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x6570;&#x636E;&#x8868;</span>
+mycol = MongoClient(<span class="hljs-string">&quot;ZhiHu&quot;</span>, <span class="hljs-string">&apos;11&#x6708;&#x77E5;&#x4E4E;&#x8206;&#x60C5;&apos;</span>)
+</code></pre>
+</li>
+<li><p>&#x521B;&#x5EFA;&#x6570;&#x636E;&#x5E93;&#x3001;&#x8868;</p>
+<p>&#x76F4;&#x63A5;&#x8FDE;&#x63A5;&#x6307;&#x5B9A;&#x7684;&#x5E93;&#x548C;&#x8868;&#xFF0C;&#x5982;&#x679C;&#x5B58;&#x5728;&#x5219;&#x8FDE;&#x63A5;&#xFF0C;&#x5982;&#x679C;&#x4E0D;&#x5B58;&#x5728;&#x5C06;&#x521B;&#x5EFA;&#xFF0C;&#x4F46;&#x662F;&#x9700;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x662F;&#xFF0C;&#x53EA;&#x6709;&#x5F53;&#x6B63;&#x5F0F;&#x5F80;&#x8868;&#x4E2D;&#x5199;&#x5165;&#x6570;&#x636E;&#x540E;&#xFF0C;&#x8868;&#x624D;&#x88AB;&#x6B63;&#x5F0F;&#x521B;&#x5EFA;</p>
+</li>
+<li><p>&#x5199;&#x5165;&#x6570;&#x636E;</p>
+<pre><code class="lang-python">mycol.insert_one(document)  <span class="hljs-comment"># &#x5176;&#x4E2D;document&#x4E3A;json&#x683C;&#x5F0F;&#x7684;&#x6570;&#x636E;</span>
+mycol.insert_many(document)  <span class="hljs-comment"># &#x5199;&#x5165;&#x591A;&#x6761;</span>
+</code></pre>
+</li>
+<li><p>&#x8BFB;&#x53D6;&#x6570;&#x636E;</p>
+<p>Mongo&#x6570;&#x636E;&#x5E93;&#x7684;&#x6570;&#x636E;&#x7531;&#x552F;&#x4E00;&#x7684;&#x952E;<code>_id</code>&#x8FDB;&#x884C;&#x7D22;&#x5F15;&#xFF0C;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x5199;&#x5165;&#x6307;&#x5B9A;&#x7684;<code>_id</code>&#xFF0C;&#x5C06;&#x81EA;&#x52A8;&#x521B;&#x5EFA;&#x7D22;&#x5F15;&#x3002;</p>
+<pre><code class="lang-python">mycol.distinct(<span class="hljs-string">&quot;_id&quot;</span>)  <span class="hljs-comment"># &#x83B7;&#x53D6;&#x6570;&#x636E;&#x8868;&#x7684;&#x6240;&#x6709;id&#xFF0C;&#x8FD4;&#x56DE;&#x683C;&#x5F0F;&#x4E3A;list</span>
+mycol.find_one({<span class="hljs-string">&apos;_id&apos;</span>: id})  <span class="hljs-comment"># &#x6839;&#x636E;&#x6307;&#x5B9A;&#x6761;&#x4EF6;&#x67E5;&#x8BE2;&#xFF0C;&#x8FD4;&#x56DE;&#x6570;&#x636E;&#x8868;&#x7684;&#x5176;&#x4E2D;&#x4E00;&#x6761;&#x6570;&#x636E;&#xFF0C;&#x683C;&#x5F0F;&#x4E3A;json</span>
+</code></pre>
+</li>
+<li><p>&#x4FEE;&#x6539;&#x6570;&#x636E;&#xFF08;&#x589E;&#x52A0;&#x5217;&#xFF09;</p>
+<p>&#x5BF9;&#x539F;&#x59CB;&#x7684;&#x6570;&#x636E;&#x8FDB;&#x884C;&#x4FEE;&#x6539;&#x6216;&#xFF0C;&#x589E;&#x52A0;&#x5217;&#x5185;&#x5BB9;&#xFF0C;&#x903B;&#x8F91;&#x4E3A;&#x786E;&#x5B9A;&#x54EA;&#x4E00;&#x884C;&#xFF0C;&#x7136;&#x540E;&#x8FDB;&#x884C;&#x4F55;&#x79CD;&#x4FEE;&#x6539;</p>
+<pre><code class="lang-python">mycol.update_one({<span class="hljs-string">&apos;_id&apos;</span>: id}, {<span class="hljs-string">&quot;$set&quot;</span>: {<span class="hljs-string">&apos;comment&apos;</span>: comment}})  <span class="hljs-comment"># $set&#x4E3A;&#x4E00;&#x79CD;&#x66F4;&#x65B0;&#x65B9;&#x6CD5;</span>
+</code></pre>
+</li>
+</ul>
+<ul>
+<li><p>&#x7B5B;&#x9009;&#x5B50;&#x96C6;</p>
+<p>&#x4F7F;&#x7528;distinct&#x8BBE;&#x7F6E;&#x7B5B;&#x9009;&#x6761;&#x4EF6;&#xFF0C;&#x83B7;&#x53D6;&#x7B26;&#x5408;&#x6761;&#x4EF6;&#x7684;&#x5B57;&#x6BB5;</p>
+<pre><code class="lang-python">idList = mycol.distinct(<span class="hljs-string">&quot;_id&quot;</span>, {<span class="hljs-string">&apos;&#x5929;&#x773C;&#x67E5;Num&apos;</span>: <span class="hljs-string">&quot;&#x5929;&#x773C;&#x67E5;&#x65E0;&#x6CD5;&#x67E5;&#x8BE2;&quot;</span>, <span class="hljs-string">&apos;Url&apos;</span>: {<span class="hljs-string">&apos;$exists&apos;</span>: <span class="hljs-keyword">False</span>}})
+</code></pre>
+<h2 id="&#x6570;&#x636E;&#x67E5;&#x8BE2;">&#x6570;&#x636E;&#x67E5;&#x8BE2;</h2>
+<h3 id="&#x67E5;&#x8BE2;&#x5B57;&#x6BB5;&#x975E;&#x7A7A;">&#x67E5;&#x8BE2;&#x5B57;&#x6BB5;&#x975E;&#x7A7A;</h3>
+<pre><code class="lang-shell">db.cols.find({&quot;name&quot;:{&quot;$ne&quot;:null}})
+</code></pre>
+<h3 id="&#x67E5;&#x8BE2;&#x5B57;&#x6BB5;&#x5305;&#x542B;&#x6570;&#x5B57;">&#x67E5;&#x8BE2;&#x5B57;&#x6BB5;&#x5305;&#x542B;&#x6570;&#x5B57;</h3>
+<pre><code class="lang-shell">db.cols.find({&quot;name&quot;:{$regex:&quot;\d&quot;}})
+db.cols..find({&quot;name&quot;:{$regex:&quot;[0-9]&quot;}})
+</code></pre>
+<p>&#x672A;&#x5B8C;&#x5F85;&#x7EED;&#xFF0C;&#x8BE6;&#x89C1;<a href="https://www.mongodb.com/docs/manual/tutorial/" target="_blank">&#x5B98;&#x65B9;&#x6587;&#x6863;</a></p>
+</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="服务器相关记录.html" class="navigation navigation-prev " aria-label="Previous page: 服务器相关">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Redis数据库.html" class="navigation navigation-next " aria-label="Next page: Redis数据库">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Mongo数据库","level":"1.11","depth":1,"next":{"title":"Redis数据库","level":"1.12","depth":1,"path":"Redis数据库.md","ref":"Redis数据库.md","articles":[]},"previous":{"title":"服务器相关","level":"1.10","depth":1,"path":"服务器相关记录.md","ref":"服务器相关记录.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"数据库相关.md","mtime":"2023-05-27T05:43:14.002Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-05-27T05:44:45.161Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
