@@ -1,6 +1,6 @@
-GitBook在线挂载时，需要注意：章节内容第一行请勿使用标题格式，否者会造成无法显示文章内容
+`GitBook`在线挂载时，需要注意：章节内容第一行请勿使用标题格式，否者会造成无法显示文章内容
 
-# 关于GitBook本地使用
+# 关于`GitBook`本地使用
 
 更多教程看查看[其它博主的分享](https://www.chengweiyang.cn/gitbook/gitbook.com/edit.html)
 
@@ -9,6 +9,16 @@ GitBook在线挂载时，需要注意：章节内容第一行请勿使用标题�
 ## 下载GitBook并安装
 
 需要使用`node`工具，没有`node`的需要先安装`node`
+
+> `GitBook`已停止维护，需要使用旧版本的`node`，附V10下载[链接](https://nodejs.org/download/release/v10.24.1/node-v10.24.1-x64.msi)
+
+- 安装`gitbook-cli`，如遇到权限问题，使用管理员权限运行CMD，后再执行
+
+  ```shell
+  npm install -g gitbook-cli
+  ```
+
+> 此时`GitBook`并未执行安装，在首次执行`gitbook init`后，将执行安装
 
 ## 书本初始化
 
@@ -60,15 +70,15 @@ gitbook init
   ```
 
 
-# Gitbook网页端服务
+# `Gitbook`网页端服务
 
 如果使用网页端的`GitBook`服务，可以不用安装`GitBook`。事实上安装`GitBook`会遇到很多苦难，所以直接使用`GitBook`网页端是一个很不错的选择。
 
-## 注册GitBook账号
+## 注册`GitBook`账号
 
 网站上注册一个号，可能需要梯子。
 
-## 关联GItHub
+## 关联`GitHub`
 
 关联`GitHub`后，可以将一本书与仓库绑定，我习惯的做法是，本地写内容，`Push`到`GitHub`上，`GitBook`会自动根据仓库变动，更新书本内容。
 
