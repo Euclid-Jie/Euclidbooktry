@@ -69,6 +69,54 @@ gitbook init
   gitbook pdf
   ```
 
+# `GitHub Pages`关联`GitBook`
+
+为GitHub仓库设置说明文档，使用此方式非常合适且便捷
+
+## 书本初始化
+
+同样需要在项目路径启动`CMD`，运行`gitbook init`进行初始化，会自动创建`README.md`和`SUMMARY.md`
+
+> 如果项目已有`README.md`，则只会新建`SUMMARY.md`，已有的`READEME.md`不会丢失
+>
+> 如果书籍的内容在项目路径下的一个文件夹内，本例中为Wiki，则直接在Wiki下进行init即可
+
+## 书本构建
+
+`SUMMARY.md`文件控制了整书本的结构，一般来说最多构建至二级目录
+
+编辑完成`SUMMARY.md`，使用`build`命令构建
+
+```shell
+gitbook build Wiki docs
+```
+
+> 代码示例为：`Book` 相关内容全部放在Wiki目录下， 新生成的`html`文件将储存至`docs`目录下
+>
+> gitbook build [书籍路径] [输出路径]，如果不指定参数，将默认使用项目目录下所有文件参与构建Book，并输出到_book目录下
+>
+> 需要注意的是，Wiki中的README.MD可以有
+
+## 书本查看
+
+使用`serve`命令可在本地400端口查看书籍
+
+```shell
+gitbook serve Wiki
+```
+
+>代码示例为：`Book` 相关内容全部放在Wiki目录下
+>
+>gitbook serve [书籍路径] [output]
+
+## 关联`GitHub Pages`
+
+- 首先确保此项目在`GitHub`上的仓库状态为公开
+- 项目设置>`Pages`>`Branch`，设置分支及书籍`html`文件路径，本例中为`docs`
+
+![image-20230527181536349](https://euclid-picgo.oss-cn-shenzhen.aliyuncs.com/image/202305271815515.png)
+
+- 查看`pages`，`url`为：https://[GitHub用户名].github.io/[仓库名]
 
 # `Gitbook`网页端服务
 
