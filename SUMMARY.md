@@ -29,6 +29,7 @@
   * [IP代理池](IP代理介绍.md)
 * [Git](Git相关.md)
 * [服务器相关](服务器相关记录.md)
+* [Linux命令](Linux命令.md)
 * [Mongo数据库](数据库相关.md)
 * [Redis数据库](Redis数据库.md)
 *  [MySQL](MySQL相关.md) 
