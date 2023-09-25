@@ -19,3 +19,11 @@ sudo Linux kill -9 PID
 ps -f -p PID
 ```
 
+## SYNC
+
+> 同步数据, 已存在则跳过,  rsync[详情](https://www.ruanyifeng.com/blog/2020/08/rsync.html)
+
+```shell
+rsync -avzu --progress source_file  dest_file
+```
+
