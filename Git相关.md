@@ -194,6 +194,36 @@ git config --global http.sslVerify "false"
 
 新分支的时候，可以根据分支需要进行命名（可以为汉字）
 
+# 使用VsCode
+
+近期的工作都在Vscode中开展, 主要是连接服务器开发, Vscode更方便, 顺便记录一下VsCode中的git管理
+
+## Git Graph插件
+
+> VsCode中热度最大的git插件应该是git lens, 但是需要收费, Git Graph是一款非常类似Pycharm自带git管理的插件
+
+得益于Git Graph这款插件, 使得在VsCode中进行git管理, 非常方便。有非常清晰的可视化分支, 并可以通过右键方式进行诸如, checkout, merge, rebase等操作
+
+## merge or rebase ? 
+
+> merge 和 rebase为git中进行分支合并时非常常见的操作, 网络上各种介绍很多, 不再班门弄斧
+
+merge 和 rebase有着不同的常见, rebase会使得git历史呈现一条直线. 尽可能整洁, 并在PR时不会冲突(因为在rebase中已经提前解决); 而merge会使得分支溯源更为容易, 会清晰记录分支的走向
+
+对我个人而言, 公司的项目多人参与且contribute较为严格, 使用rebase; 个人项目往往各种奇思妙想比较多, 故使用merge
+
+## 如何借助Git Graph进行merge ?
+
+> 定心丸: 只要不push到远程, 无论何种操作都能通过reset复原, 可大胆操作
+>
+> 后悔药: 如果在进行merge, 或者正在解决冲突途中, 想退出, 执行`git merge --abort`即可
+
+确保自己处于master分支上, 选择dev分支右键进行`merge into current branch`, 如果有冲突(出现合并冲突), 则解决冲突, 完成后实现merge
+
+## 如何借助Git Graph进行rebase ?
+
+
+
 # tipis
 
 - 修改项目文件的*~.git\config*中的远程地址，可以直接修改http协议为ssh协议
