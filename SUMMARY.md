@@ -1,6 +1,7 @@
 * [Introduction](README.md)
 * [没办法，得投暑期实习](暑期实习投递.md)
 * [资源网站](资源网站.md)
+* [亲测好用的软件](软件推荐.md)
 * [旁门左道](奇怪的技巧.md)
     * [既爱又恨的编码格式](编码格式.md)
     * [datetime与pd.to_datetime对比](datetime&to_datetime.md)
