@@ -19,6 +19,12 @@ sudo kill -9 PID
 ps -f -p PID
 ```
 
+> 查询pid对应的开始时间
+
+```shell
+ ps -o lstart -p PID
+```
+
 ## SYNC
 
 > 同步数据, 已存在则跳过,  rsync[详情](https://www.ruanyifeng.com/blog/2020/08/rsync.html)
