@@ -231,6 +231,49 @@ merge 和 rebase有着不同的常见, rebase会使得git历史呈现一条直�
 
 # tipis
 
+## 后悔药`reflog`
+
+只要没被`push`到远程，本地的所有操作都可以通过`reflog`进行恢复
+
+- 查看操作历史记录
+
+    ```bash
+    git reflog
+    ```
+
+    > demo中展示了此repo的最近几条操作记录，寻找出你需要回退的记录对应的hash头
+
+    ```bash
+    0c326f8 (HEAD -> dev/Jie/half_hour_features) HEAD@{0}: reset: moving to 0c326f8
+    6426675 HEAD@{1}: reset: moving to 6426675
+    cd44d32 (github/test, github/master, github/HEAD, master) HEAD@{2}: reset: moving to cd44d32
+    6426675 HEAD@{3}: reset: moving to HEAD
+    6426675 HEAD@{4}: rebase (finish): returning to refs/heads/dev/Jie/half_hour_features
+    6426675 HEAD@{5}: rebase (pick): add AfterFog ClimbPeak
+    80f1155 HEAD@{6}: rebase (squash): clear code and add unittest
+    fe39abc HEAD@{7}: rebase (squash): # 这是一个 2 个提交的组合。
+    d3a491e HEAD@{8}: rebase (start): checkout master
+    2388e09 HEAD@{9}: rebase (finish): returning to refs/heads/dev/Jie/half_hour_features
+    2388e09 HEAD@{10}: rebase (pick): add AfterFog ClimbPeak
+    37a1991 HEAD@{11}: rebase (pick): fix distance to high
+    5046792 HEAD@{12}: rebase (pick): add real_stats, corr_price_volume, large_volume
+    d3a491e HEAD@{13}: rebase (pick): clear code and add unittest
+    274dd93 HEAD@{14}: rebase (pick): add DeriveHalfHourFeatureFromTickTradeMinBar
+    f9797f5 HEAD@{15}: rebase (pick): init branch
+    ```
+
+- 进行回退
+
+  > 需要说明的是，进行回退后，将回到此条操作结束后的状态
+
+  ```bash
+  git reset --hard 6426675
+  ```
+
+  
+
+## 其他
+
 - 修改项目文件的*~.git\config*中的远程地址，可以直接修改http协议为ssh协议
 
 
