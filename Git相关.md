@@ -87,12 +87,15 @@ Git官网下载并安装，配置邮箱、
 
 - 推送
 
+  > 如果远程没有这个分支，第二种方式
+  
   ```bash
   git push
+  git push --set-upstream github dev/jie/htsec_feature
   ```
-
+  
   查看提交记录
-
+  
   ```bash
   git log
   ```
