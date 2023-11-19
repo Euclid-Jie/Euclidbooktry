@@ -36,6 +36,7 @@
 *  [MySQL](MySQL相关.md) 
 * [正则表达式](正则表达式.md)
 * [GitBook](GitBook相关.md)
+* [VSCode](VScode.md)
 * [Uqer](Uqer.md)
 * [SSH](SSH介绍.md)
 * [BAT](BAT可执行文件.md)
