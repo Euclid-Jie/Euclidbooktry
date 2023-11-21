@@ -33,3 +33,13 @@ ps -f -p PID
 rsync -avzu --progress source_file  dest_file
 ```
 
+## 查看硬盘容量
+
+```base
+dust -d 2
+```
+
+```bash
+df -h
+```
+
