@@ -273,7 +273,22 @@ merge 和 rebase有着不同的常见, rebase会使得git历史呈现一条直�
   git reset --hard 6426675
   ```
 
-  
+
+## PR更新
+
+> 提交了PR，还没来得及merge, master却发生了更新, 怎么办
+
+将PR rebase 到 remote master
+
+```base
+git pull --rebase origin master
+```
+
+force 提交
+
+```base
+git push -u github impl_ht_rpt_half_hour -f
+```
 
 ## 其他
 
