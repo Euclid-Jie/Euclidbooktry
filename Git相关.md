@@ -290,11 +290,23 @@ force 提交
 git push -u github impl_ht_rpt_half_hour -f
 ```
 
+其他机器进行`pull`
+
+```bash
+git pull --rebase
+```
+
 ## 其他
 
 - 修改项目文件的*~.git\config*中的远程地址，可以直接修改http协议为ssh协议
 
+- 远端已删除，但是本地还显示有，需要对照`remote`进行修建
 
+  ```bash
+  git remote prune origin --dry -run
+  ```
+
+  
 
 
 
