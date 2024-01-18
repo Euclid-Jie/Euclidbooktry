@@ -49,14 +49,15 @@ Git官网下载并安装，配置邮箱、
 
 - 添加文件
 
-  ```
+  ```bash
   git add
   git add . # 添加所有新增文件
+  git add --patch  # 添加部分
   ```
 
 - 查看被管理的所有文件
 
-  ```git
+  ```bash
   git ls-files
   ```
 
@@ -88,16 +89,22 @@ Git官网下载并安装，配置邮箱、
 - 推送
 
   > 如果远程没有这个分支，第二种方式
-  
+  >
+  > 第三种方式会将remote倒退至hash commit
+
   ```bash
   git push
   git push --set-upstream github dev/jie/htsec_feature
+  git push github hash:branch_name -f
   ```
-  
-  查看提交记录
-  
+
+- 查看提交记录
+
+  > git reflog 显示的内容更多
+
   ```bash
   git log
+  git reflog
   ```
 
 
