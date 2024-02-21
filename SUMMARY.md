@@ -13,6 +13,7 @@
     * [Numpy函数](Numpy相关.md)
     * [python的IDE配置](Python的IDE配置.md)
     * [创建Package并上传至Pypi](python_Package相关.md)
+    * [Unitest](Unitest.md)
 * [R语言](R语言操作.md)
     * [英文分词](R英文分词.md)
     * [回归分析](R回归分析.md)
