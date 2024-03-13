@@ -85,6 +85,16 @@ Git官网下载并安装，配置邮箱、
   git diff  # 查看具体文件内容变化
   ```
 
+- `pick`
+
+  将其他分支上的提交，`pick`到当前分支上，相当于，`copy`了文件的变动到当前分支
+
+  ```bash
+  git cherry-pick commit1_hash -n # pick commit 1, -n 控制了只pick但是不commit
+  git cherry-pick commit1_hash commit2_hash # pick 两个提交
+  git cherry-pick commit1_hash..commit5_hash # pick commit1 至 commit5 间的多个提交
+  ```
+
 - 提交
 
   与`Pycharm`不同，提交前都需要`add`
