@@ -1,6 +1,6 @@
 记录使用Git过程中的总结，主要包括Git命令，GIt与各种IDE的配置，Git与GitHub远程仓库连接
 
-# 使用GitBash
+当然使用Git的前提是，设置了SHH，教程[指路](SSH介绍.md)
 
 ## Git配置
 
