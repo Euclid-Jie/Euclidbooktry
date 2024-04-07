@@ -26,7 +26,7 @@
 
 ### Click House
 
-[Click House 使用](ClickHouse.md)
+[Click House 使用](数据库/ClickHouse.md)
 
 windows不能安装 click house，故使用 docker 的方式解决，只需要开放两个端口（关于为什么是两个，不甚清楚，只是知道比较特殊）
 
