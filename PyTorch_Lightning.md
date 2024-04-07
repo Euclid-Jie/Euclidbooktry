@@ -87,8 +87,6 @@ class CustomNet(pl.LightningModule):
 
 ```
 
-
-
 ## [sanity_checking](https://lightning.ai/docs/pytorch/stable/common/trainer.html#sanity-checking)
 
 在正式的训练之前（指 `training_step` `validation_step`) 运行前，会进行检查，`self.trainer.sanity_checking` 判断是否处于此状态，以对一些 hooks 进行屏蔽，以下为示例：
@@ -102,5 +100,17 @@ def on_train_epoch_end(self) -> None:
         counts = torch.bincount(self.zq_indices_train, minlength=32)
         probs = counts.float() / self.zq_indices_train.shape[0]
         entropy = -(probs * torch.log2(probs + 1e-9)).sum()
+```
+
+## [register_buffer](https://pytorch.org/docs/stable/generated/torch.nn.Module.html#torch.nn.Module.register_buffer)
+
+给模型增加一个缓存区，可以存带梯度的参数，用于更新，也可以做一个缓存，不作为模型参数, `persistent`控制了是否存为模型参数
+
+```python
+self.register_buffer(
+    "zq_indices_train",
+    torch.full((train_dataset_length,), -1),
+    persistent=False,
+)
 ```
 
