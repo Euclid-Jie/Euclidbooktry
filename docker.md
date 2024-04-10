@@ -36,4 +36,8 @@ windows不能安装 click house，故使用 docker 的方式解决，只需要�
 
 - run: 如图所示，设置两个端口和密码即可，特殊的点是，默认用户为 `default`
 
+  > 下图中有误，CLICKHOUSE_ADMIN_PASSWORD为管理员密码，
+  >
+  > ALLOW_EMPTY_PASSWORD设置为true，则表示不设置密码
+  
   ![image-20240323234824827](https://euclid-picgo.oss-cn-shenzhen.aliyuncs.com/image/202403232348902.png)
