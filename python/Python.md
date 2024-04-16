@@ -8,3 +8,4 @@
 - Numpy相关
 - Python的IDE配置
 - 正则表达式
+- Pip

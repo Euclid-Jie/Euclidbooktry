@@ -7,6 +7,7 @@
     * [既爱又恨的编码格式](编码格式.md)
     * [datetime与pd.to_datetime对比](datetime&to_datetime.md)
 * [Python](python/Python.md)
+    * [Pip介绍](python/pip.md)
     * [Python虚拟环境](python/虚拟环境.md)
     * [Python类库](python/Python类库.md)
     * [DataFrame函数](python/DataFrame函数相关.md)
