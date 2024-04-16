@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Unitest · GitBook</title>
+        <title>Pip介绍 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -85,10 +85,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../Machine_Learning_summary.html" />
+    <link rel="next" href="虚拟环境.html" />
     
     
-    <link rel="prev" href="python_Package相关.html" />
+    <link rel="prev" href="Python.html" />
     
 
     </head>
@@ -247,7 +247,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.5.1" data-path="pip.html">
+        <li class="chapter active" data-level="1.5.1" data-path="pip.html">
             
                 <a href="pip.html">
             
@@ -351,7 +351,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.5.9" data-path="Unitest.html">
+        <li class="chapter " data-level="1.5.9" data-path="Unitest.html">
             
                 <a href="Unitest.html">
             
@@ -884,7 +884,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Unitest</a>
+        <a href=".." >Pip介绍</a>
     </h1>
 </div>
 
@@ -899,41 +899,71 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h2 id="&#x76EE;&#x5F55;&#x7ED3;&#x6784;">&#x76EE;&#x5F55;&#x7ED3;&#x6784;</h2>
-<p>&#x5176;&#x4E2D; <code>stats.py</code> &#x4E3A;&#x51FD;&#x6570;&#x5B9E;&#x73B0;&#xFF0C;<code>test_stats.py</code> &#x4E3A;&#x6D4B;&#x8BD5;&#x6587;&#x4EF6;</p>
-<pre><code class="lang-markdown"><span class="hljs-bullet">- </span>toolkit [project folder]
- - src [sorce folder]
-<span class="hljs-code">     - init.py</span>
-<span class="hljs-code">     - stats.py</span>
- - tests [test folder]
-<span class="hljs-code">     - test_stats.py</span>
+                                <p>pip&#x662F;&#x4E00;&#x4E2A;&#x7528;&#x4E8E;&#x5B89;&#x88C5;&#x548C;&#x7BA1;&#x7406;Python&#x8F6F;&#x4EF6;&#x5305;&#x7684;&#x8F6F;&#x4EF6;&#x5305;&#x7BA1;&#x7406;&#x7CFB;&#x7EDF;&#x3002;&#x5B83;&#x4EE3;&#x8868;&quot;Pip Installs Packages&quot;&#x6216;&quot;Pip Installs Python&quot;&#x3002;&#x4F7F;&#x7528;pip&#xFF0C;&#x60A8;&#x53EF;&#x4EE5;&#x8F7B;&#x677E;&#x5730;&#x4ECE;Python&#x8F6F;&#x4EF6;&#x5305;&#x7D22;&#x5F15;&#xFF08;PyPI&#xFF09;&#x6216;&#x5176;&#x4ED6;&#x8F6F;&#x4EF6;&#x5305;&#x7D22;&#x5F15;&#x5B89;&#x88C5;&#x3001;&#x5347;&#x7EA7;&#x548C;&#x5378;&#x8F7D;Python&#x8F6F;&#x4EF6;&#x5305;&#x3002;</p>
+<h2 id="&#x5B89;&#x88C5;">&#x5B89;&#x88C5;</h2>
+<p>&#x4E00;&#x822C;&#x6765;&#x8BF4;, &#x5B89;&#x88C5;python&#x540E;, &#x4F1A;&#x81EA;&#x5E26; pip, &#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x8FD0;&#x884C;&#x547D;&#x4EE4;<code>pip --version</code>&#x68C0;&#x67E5;&#x662F;&#x5426;&#x5DF2;&#x5B89;&#x88C5;pip&#x3002;&#x5982;&#x679C;&#x5DF2;&#x5B89;&#x88C5;&#xFF0C;&#x60A8;&#x5C06;&#x770B;&#x5230;&#x7248;&#x672C;&#x53F7;&#x3002;
+&#x5982;&#x679C;&#x672A;&#x5B89;&#x88C5;pip&#xFF0C;&#x53EF;&#x4EE5;&#x8FD0;&#x884C;&#x547D;&#x4EE4;<code>python -m ensurepip --upgrade</code>&#x6765;&#x5B89;&#x88C5;&#x5B83;&#x3002;&#x8FD9;&#x5C06;&#x786E;&#x4FDD;pip&#x5DF2;&#x5B89;&#x88C5;&#x5E76;&#x4E14;&#x662F;&#x6700;&#x65B0;&#x7248;&#x672C;&#x3002;</p>
+<h2 id="&#x4F7F;&#x7528;&#x7B80;&#x4ECB;">&#x4F7F;&#x7528;&#x7B80;&#x4ECB;</h2>
+<p>&#x5B89;&#x88C5;&#x4E86;pip&#x4E4B;&#x540E;&#xFF0C;&#x60A8;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5B83;&#x6765;&#x5B89;&#x88C5;Python&#x8F6F;&#x4EF6;&#x5305;&#xFF0C;&#x53EA;&#x9700;&#x8FD0;&#x884C;&#x547D;&#x4EE4;<code>pip install package_name</code>&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x8981;&#x5B89;&#x88C5;<code>requests</code>&#x8F6F;&#x4EF6;&#x5305;&#xFF0C;&#x53EF;&#x4EE5;&#x8FD0;&#x884C;<code>pip install requests</code>&#x3002;</p>
+<p>&#x60A8;&#x8FD8;&#x53EF;&#x4EE5;&#x5728;&#x8F6F;&#x4EF6;&#x5305;&#x540D;&#x79F0;&#x540E;&#x9762;&#x6DFB;&#x52A0;&#x7248;&#x672C;&#x53F7;&#x6765;&#x5B89;&#x88C5;&#x7279;&#x5B9A;&#x7248;&#x672C;&#x7684;&#x8F6F;&#x4EF6;&#x5305;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x8981;&#x5B89;&#x88C5;<code>requests</code>&#x8F6F;&#x4EF6;&#x5305;&#x7684;2.0.0&#x7248;&#x672C;&#xFF0C;&#x53EF;&#x4EE5;&#x8FD0;&#x884C;<code>pip install requests==2.0.0</code>&#x3002;</p>
+<p>&#x8981;&#x5C06;&#x8F6F;&#x4EF6;&#x5305;&#x5347;&#x7EA7;&#x5230;&#x6700;&#x65B0;&#x7248;&#x672C;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x547D;&#x4EE4;<code>pip install --upgrade package_name</code>&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x8981;&#x5347;&#x7EA7;<code>requests</code>&#x8F6F;&#x4EF6;&#x5305;&#xFF0C;&#x53EF;&#x4EE5;&#x8FD0;&#x884C;<code>pip install --upgrade requests</code>&#x3002;</p>
+<p>&#x8981;&#x5378;&#x8F7D;&#x8F6F;&#x4EF6;&#x5305;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x547D;&#x4EE4;<code>pip uninstall package_name</code>&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x8981;&#x5378;&#x8F7D;<code>requests</code>&#x8F6F;&#x4EF6;&#x5305;&#xFF0C;&#x53EF;&#x4EE5;&#x8FD0;&#x884C;<code>pip uninstall requests</code>&#x3002;</p>
+<h2 id="&#x955C;&#x50CF;&#x914D;&#x7F6E;">&#x955C;&#x50CF;&#x914D;&#x7F6E;</h2>
+<p>&#x5728;&#x4E2D;&#x56FD;&#x5927;&#x9646;&#xFF0C;&#x7531;&#x4E8E;&#x7F51;&#x7EDC;&#x539F;&#x56E0;&#xFF0C;&#x76F4;&#x63A5;&#x4F7F;&#x7528; pip &#x4ECE; PyPI &#x5B89;&#x88C5;&#x5305;&#x53EF;&#x80FD;&#x4F1A;&#x6BD4;&#x8F83;&#x6162;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x5F88;&#x591A;&#x4EBA;&#x4F1A;&#x9009;&#x62E9;&#x4F7F;&#x7528;&#x56FD;&#x5185;&#x7684;&#x955C;&#x50CF;&#x6E90;&#xFF0C;&#x5982;&#x963F;&#x91CC;&#x4E91;&#x3001;&#x8C46;&#x74E3;&#x3001;&#x6E05;&#x534E;&#x5927;&#x5B66;&#x7B49;&#x63D0;&#x4F9B;&#x7684; PyPI &#x955C;&#x50CF;&#x3002;</p>
+<p>&#x4F60;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4FEE;&#x6539; pip &#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x6765;&#x8BBE;&#x7F6E;&#x955C;&#x50CF;&#x6E90;&#x3002;pip &#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x901A;&#x5E38;&#x4F4D;&#x4E8E;&#x7528;&#x6237;&#x4E3B;&#x76EE;&#x5F55;&#x4E0B;&#xFF0C;&#x540D;&#x4E3A; <code>pip.conf</code>&#xFF08;Unix&#xFF09;&#x6216; <code>pip.ini</code>&#xFF08;Windows&#xFF09;&#x3002;</p>
+<p>&#x4EE5;&#x4E0B;&#x662F;&#x5982;&#x4F55;&#x8BBE;&#x7F6E; pip &#x7684;&#x955C;&#x50CF;&#x6E90;&#xFF1A;</p>
+<ol>
+<li><p>&#x521B;&#x5EFA;&#x6216;&#x6253;&#x5F00; pip &#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF1A;</p>
+<ul>
+<li>Unix&#xFF1A;<code>~/.pip/pip.conf</code></li>
+<li>Windows&#xFF1A;<code>~\pip\pip.ini</code></li>
+<li>Windows &#x865A;&#x62DF;&#x73AF;&#x5883;(Venv)&#x4E0B;&#xFF1A;<code>.venv\pip.ini</code></li>
+</ul>
+</li>
+<li><p>&#x5728;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4E2D;&#x6DFB;&#x52A0;&#x4EE5;&#x4E0B;&#x5185;&#x5BB9;&#xFF1A;</p>
+<pre><code class="lang-ini"><span class="hljs-section">[global]</span>
+<span class="hljs-attr">timeout</span> = <span class="hljs-number">60</span>
+<span class="hljs-attr">index-url</span> = https://pypi.tuna.tsinghua.edu.cn/simple
+<span class="hljs-attr">trusted-host</span> = pypi.douban.com
 </code></pre>
-<h2 id="&#x4EE5;&#x4E0B;&#x4E3A;-teststatspy-&#x5185;&#x5BB9;">&#x4EE5;&#x4E0B;&#x4E3A; <code>test_stats.py</code> &#x5185;&#x5BB9;</h2>
-<pre><code class="lang-python"><span class="hljs-keyword">import</span> unittest
-<span class="hljs-keyword">import</span> numpy <span class="hljs-keyword">as</span> np
-<span class="hljs-keyword">from</span> toolkit.stats <span class="hljs-keyword">import</span> f_trapezoid
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">StatsUtilsTest</span><span class="hljs-params">(unittest.TestCase)</span>:</span>
-    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">test_f_trapezoid</span><span class="hljs-params">(self)</span>:</span>
-        a = np.array([<span class="hljs-number">-5.5</span>, <span class="hljs-number">-4.5</span>, <span class="hljs-number">-3.5</span>, <span class="hljs-number">-2.5</span>, <span class="hljs-number">-1.5</span>, <span class="hljs-number">-0.5</span>, <span class="hljs-number">0.5</span>, <span class="hljs-number">1.5</span>, <span class="hljs-number">2.5</span>, <span class="hljs-number">3.5</span>, <span class="hljs-number">4.5</span>, <span class="hljs-number">5.5</span>])
-        realized_a = f_trapezoid(a, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">5</span>)
-        expected_a = np.array([<span class="hljs-number">-0.5</span>, <span class="hljs-number">-1</span>, <span class="hljs-number">-1</span>, <span class="hljs-number">-0.5</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0.5</span>, <span class="hljs-number">1</span>, <span class="hljs-number">1</span>, <span class="hljs-number">0.5</span>])
-        np.testing.assert_almost_equal(realized_a, expected_a, decimal=<span class="hljs-number">7</span>)
-<span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">&quot;__main__&quot;</span>:
-unittest.main()
+<p>&#x8FD9;&#x91CC;&#x8BBE;&#x7F6E;&#x7684;&#x662F;&#x6E05;&#x534E;&#x5927;&#x5B66;&#x7684; PyPI &#x955C;&#x50CF;&#x3002;&#x4F60;&#x4E5F;&#x53EF;&#x4EE5;&#x9009;&#x62E9;&#x5176;&#x4ED6;&#x7684;&#x955C;&#x50CF;&#x6E90;&#xFF0C;&#x53EA;&#x9700;&#x5C06; URL &#x66FF;&#x6362;&#x4E3A;&#x5BF9;&#x5E94;&#x7684;&#x955C;&#x50CF;&#x6E90; URL &#x5373;&#x53EF;&#x3002;</p>
+</li>
+<li><p>&#x4FDD;&#x5B58;&#x5E76;&#x5173;&#x95ED;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF0C;&#x68C0;&#x67E5;&#x662F;&#x5426;&#x66FF;&#x6362;&#x5B8C;&#x6210;&#xFF1A;</p>
+<p>&#x8FD0;&#x884C;<code>pip config list</code>&#xFF0C;&#x82E5;&#x8FD4;&#x56DE;&#x955C;&#x50CF;&#x6E90;&#x5730;&#x5740;&#xFF0C;&#x5219;&#x8BBE;&#x7F6E;&#x6210;&#x529F;</p>
+</li>
+<li><p>&#x4E5F;&#x53EF;&#x4EE5;&#x5728;&#x547D;&#x4EE4;&#x884C;&#x4E2D;&#x8FD0;&#x884C;&#x4EE5;&#x4E0B;&#x4E24;&#x884C;&#x5B9E;&#x73B0;</p>
+<pre><code class="lang-cmd"> pip config <span class="hljs-built_in">set</span> global.index-url http://mirrors.aliyun.com/pypi/simple/
+ pip config <span class="hljs-built_in">set</span> global.trusted-host mirrors.aliyun.com
 </code></pre>
-<h2 id="&#x8FD0;&#x884C;&#x6D4B;&#x8BD5;">&#x8FD0;&#x884C;&#x6D4B;&#x8BD5;</h2>
-<h3 id="&#x6D4B;&#x8BD5;&#x6574;&#x4E2A;&#x6587;&#x4EF6;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x6D4B;&#x8BD5;&#x5355;&#x5143;">&#x6D4B;&#x8BD5;&#x6574;&#x4E2A;&#x6587;&#x4EF6;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x6D4B;&#x8BD5;&#x5355;&#x5143;</h3>
-<pre><code class="lang-cmd">python -m unittest tests.test_stats.StatsUtilsTest
+</li>
+</ol>
+<h2 id="&#x9644;&#x5F55;">&#x9644;&#x5F55;</h2>
+<h3 id="&#x5176;&#x4ED6;&#x955C;&#x50CF;&#x6E90;">&#x5176;&#x4ED6;&#x955C;&#x50CF;&#x6E90;</h3>
+<ul>
+<li><p>&#x706B;&#x5C71;</p>
+<pre><code class="lang-ini">  [global]
+  index-url = https://mirrors.ivolces.com/pypi/simple/
 </code></pre>
-<p>&#x6216;</p>
-<pre><code class="lang-cmd">python -m unittest tests/test_stats.py
+</li>
+<li><p>&#x8C46;&#x74E3;</p>
+<pre><code class="lang-ini">  [global]
+  index-url = http://pypi.douban.com/simple/
 </code></pre>
-<h3 id="&#x6D4B;&#x8BD5;&#x6587;&#x4EF6;&#x4E2D;&#x7684;&#x6307;&#x5B9A;&#x6D4B;&#x8BD5;&#x5355;&#x5143;">&#x6D4B;&#x8BD5;&#x6587;&#x4EF6;&#x4E2D;&#x7684;&#x6307;&#x5B9A;&#x6D4B;&#x8BD5;&#x5355;&#x5143;</h3>
-<pre><code class="lang-cmd">python -m unittest tests.test_stats.StatsUtilsTest.test_f_trapezoid
+</li>
+<li><p>&#x963F;&#x91CC;&#x4E91;</p>
+<pre><code class="lang-ini">  [global]
+  index-url = http://mirrors.aliyun.com/pypi/simple/
 </code></pre>
-<h3 id="&#x6D4B;&#x8BD5;&#x6574;&#x4E2A;-tests-&#x76EE;&#x5F55;&#x4E0B;&#x7684;&#x6240;&#x6709;&#x6587;&#x4EF6;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x6D4B;&#x8BD5;">&#x6D4B;&#x8BD5;&#x6574;&#x4E2A; <code>tests</code> &#x76EE;&#x5F55;&#x4E0B;&#x7684;&#x6240;&#x6709;&#x6587;&#x4EF6;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x6D4B;&#x8BD5;</h3>
-<pre><code class="lang-cmd">python -m unittest discover -s tests
-</code></pre>
+</li>
+</ul>
+<h2 id="&#x5E38;&#x7528;&#x547D;&#x4EE4;">&#x5E38;&#x7528;&#x547D;&#x4EE4;</h2>
+<ul>
+<li>&#x5B89;&#x88C5; Python &#x5305;&#xFF1A;<code>pip install package_name</code></li>
+<li>&#x5378;&#x8F7D; Python &#x5305;&#xFF1A;<code>pip uninstall package_name</code></li>
+<li>&#x5347;&#x7EA7; Python &#x5305;&#xFF1A;<code>pip install --upgrade package_name</code></li>
+<li>&#x5217;&#x51FA;&#x5DF2;&#x5B89;&#x88C5;&#x7684;&#x5305;&#xFF1A;<code>pip list</code></li>
+<li>&#x663E;&#x793A;&#x5305;&#x7684;&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;&#xFF1A;<code>pip show package_name</code></li>
+</ul>
 <footer class="page-footer"><span class="copyright">Copyright &#xA9; Euclid-Jie 2023 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x7AE0;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
 2024-04-16 15:33:07
 </span></footer>
@@ -964,12 +994,12 @@ unittest.main()
 
             
                 
-                <a href="python_Package相关.html" class="navigation navigation-prev " aria-label="Previous page: 创建Package并上传至Pypi">
+                <a href="Python.html" class="navigation navigation-prev " aria-label="Previous page: Python">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="../Machine_Learning_summary.html" class="navigation navigation-next " aria-label="Next page: Machine Learning">
+                <a href="虚拟环境.html" class="navigation navigation-next " aria-label="Next page: Python虚拟环境">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -980,7 +1010,7 @@ unittest.main()
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Unitest","level":"1.5.9","depth":2,"next":{"title":"Machine Learning","level":"1.6","depth":1,"path":"Machine_Learning_summary.md","ref":"Machine_Learning_summary.md","articles":[{"title":"PyTorch Lightning","level":"1.6.1","depth":2,"path":"PyTorch_Lightning.md","ref":"PyTorch_Lightning.md","articles":[]}]},"previous":{"title":"创建Package并上传至Pypi","level":"1.5.8","depth":2,"path":"python/python_Package相关.md","ref":"python/python_Package相关.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["back-to-top-button","chapter-fold","code","splitter","-lunr","-search","search-pro","insert-logo","custom-favicon","pageview-count","tbfed-pagefooter","popup","-sharing","sharing-plus"],"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy Euclid-Jie 2023","modify_label":"该文章修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"splitter":{},"search-pro":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"popup":{},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"./icon/book.ico","back-to-top-button":{},"pageview-count":{},"custom-favicon":{},"sharing":{"qq":true,"all":["douban","facebook","google","instapaper","linkedin","twitter","weibo","messenger","qq","qzone","viber","whatsapp"],"douban":true,"facebook":true,"weibo":true,"twitter":true,"pocket":true,"google":true,"qzone":true},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"style":"background: none; max-height: 30px; min-height: 30px","url":"https://euclid-picgo.oss-cn-shenzhen.aliyuncs.com/image/202305271845293.png"}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"python/Unitest.md","mtime":"2024-04-16T15:33:07.553Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-04-16T15:33:42.321Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Pip介绍","level":"1.5.1","depth":2,"next":{"title":"Python虚拟环境","level":"1.5.2","depth":2,"path":"python/虚拟环境.md","ref":"python/虚拟环境.md","articles":[]},"previous":{"title":"Python","level":"1.5","depth":1,"path":"python/Python.md","ref":"python/Python.md","articles":[{"title":"Pip介绍","level":"1.5.1","depth":2,"path":"python/pip.md","ref":"python/pip.md","articles":[]},{"title":"Python虚拟环境","level":"1.5.2","depth":2,"path":"python/虚拟环境.md","ref":"python/虚拟环境.md","articles":[]},{"title":"Python类库","level":"1.5.3","depth":2,"path":"python/Python类库.md","ref":"python/Python类库.md","articles":[]},{"title":"DataFrame函数","level":"1.5.4","depth":2,"path":"python/DataFrame函数相关.md","ref":"python/DataFrame函数相关.md","articles":[]},{"title":"时间格式数据处理","level":"1.5.5","depth":2,"path":"python/时间格式转换.md","ref":"python/时间格式转换.md","articles":[]},{"title":"Numpy函数","level":"1.5.6","depth":2,"path":"python/Numpy相关.md","ref":"python/Numpy相关.md","articles":[]},{"title":"python的IDE配置","level":"1.5.7","depth":2,"path":"python/Python的IDE配置.md","ref":"python/Python的IDE配置.md","articles":[]},{"title":"创建Package并上传至Pypi","level":"1.5.8","depth":2,"path":"python/python_Package相关.md","ref":"python/python_Package相关.md","articles":[]},{"title":"Unitest","level":"1.5.9","depth":2,"path":"python/Unitest.md","ref":"python/Unitest.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["back-to-top-button","chapter-fold","code","splitter","-lunr","-search","search-pro","insert-logo","custom-favicon","pageview-count","tbfed-pagefooter","popup","-sharing","sharing-plus"],"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy Euclid-Jie 2023","modify_label":"该文章修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"splitter":{},"search-pro":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"popup":{},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"./icon/book.ico","back-to-top-button":{},"pageview-count":{},"custom-favicon":{},"sharing":{"qq":true,"all":["douban","facebook","google","instapaper","linkedin","twitter","weibo","messenger","qq","qzone","viber","whatsapp"],"douban":true,"facebook":true,"weibo":true,"twitter":true,"pocket":true,"google":true,"qzone":true},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"style":"background: none; max-height: 30px; min-height: 30px","url":"https://euclid-picgo.oss-cn-shenzhen.aliyuncs.com/image/202305271845293.png"}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"python/pip.md","mtime":"2024-04-16T15:33:07.553Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-04-16T15:33:42.321Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
