@@ -1,6 +1,7 @@
 ## PID
 
-> 查看进程详情
+> 使用 `glances` 查看所有进程情况
+> 再使用ps查看指定进程详情
 
 ```shell
 ps -f -p PID
