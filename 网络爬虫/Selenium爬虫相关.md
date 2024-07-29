@@ -2,6 +2,12 @@
 
 这是`ChromeDriver`的镜像下载[地址](https://registry.npmmirror.com/binary.html?path=chromedriver/)，更新浏览器后记得更新`ChromeDriver`，顺便我个人记录一下，我的`ChromeDriver`装在`C:\Program Files (x86)\Google\Chrome\Application`
 
+> 注意：
+>
+> 1、上文中的镜像已停止更新，现在只能从`ChromeDriver`官方[站点](https://googlechromelabs.github.io/chrome-for-testing/)进行下载
+>
+> 2、此外`ChromeDriver`不仅要放到`\Chrome\Application`下，还有可能需要放到python路径下：`D:\Program Files\Anaconda3`
+
 # 主要流程讲解
 
 ## 1、控制开启浏览器
@@ -13,6 +19,7 @@ option.add_experimental_option("excludeSwitches", ['enable-automation', 'enable-
 driver = Chrome(options=option)  # 模拟开浏览器
 driver.get('https://m.xiaozhu.com/#') # 跳转网址
 myDriver.maximize_window()  # 最大化窗口
+driver.title  # 如果成功打印title则说明接管成功
 ```
 
 ## 2、获取对应元素
