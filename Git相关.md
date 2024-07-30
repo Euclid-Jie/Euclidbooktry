@@ -339,9 +339,14 @@ git pull --rebase
   git remote prune origin --dry -run
   ```
 
-  
 
+- 关于 Head Orgin 等
 
+  [细读 Git | 让你弄懂 origin、HEAD、FETCH_HEAD 相关内容-阿里云开发者社区 (aliyun.com)](https://developer.aliyun.com/article/919354)
+
+- 关于 git submodule
+
+  [git submodule 命令 | 菜鸟教程 (runoob.com)](https://www.runoob.com/git/git-submodule.html)
 
 
 
