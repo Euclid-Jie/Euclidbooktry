@@ -34,7 +34,7 @@ pip是一个用于安装和管理Python软件包的软件包管理系统。它�
    [global]
    timeout = 60
    index-url = https://pypi.tuna.tsinghua.edu.cn/simple
-   trusted-host = pypi.douban.com
+   trusted-host = pypi.tuna.tsinghua.com
    ```
 
    这里设置的是清华大学的 PyPI 镜像。你也可以选择其他的镜像源，只需将 URL 替换为对应的镜像源 URL 即可。
