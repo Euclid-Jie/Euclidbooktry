@@ -81,4 +81,5 @@ pip是一个用于安装和管理Python软件包的软件包管理系统。它�
 - 升级 Python 包：`pip install --upgrade package_name`
 - 列出已安装的包：`pip list`
 - 显示包的详细信息：`pip show package_name`
+- 生成requirements：`pip freeze > requirements.txt`
 
